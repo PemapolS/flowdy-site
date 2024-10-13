@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const SocialCard = ({imgURL, label, href}) => {
   return (
     <a href={href}>
-        <div class="flex-1 flex gap-5 min-w-[200px] lg:min-w-[250px] w-full rounded-[20px] px-3 py-3 ring-1 items-center ring-slate-900/15 dark:bg-slate-300/5">
+        <div class="flex-1 flex gap-5 min-w-[200px] lg:min-w-[250px] w-full rounded-[20px] px-3 py-2 lg:py-3 ring-1 items-center ring-slate-900/15 dark:bg-slate-300/5">
             <div class="flex w-11 h-11 justify-center items-center rounded-xl dark:hidden">
                 <FontAwesomeIcon icon={imgURL} size="xl"/>
             </div>
