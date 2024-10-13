@@ -8,7 +8,7 @@ const Partners = () => {
       </h1>
       <div class="grid grid-cols-2 lg:flex lg:flex-1 justify-evenly items-center gap-3 lg:gap-10 py-4">
         <a href="https://fez.pet">
-          <div class="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 shadow-sm">
+          <div class="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 hover:bg-slate-600/15 dark:hover:bg-white/10 shadow-sm">
             <img 
               src={Fez}
               alt="Fez"
@@ -20,7 +20,7 @@ const Partners = () => {
           </div>
         </a>
         <a href="https://linktr.ee/BlueJaytheWolf">
-          <div class="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 shadow-sm">
+          <div class="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 hover:bg-slate-600/15 dark:hover:bg-white/10 shadow-sm">
             <img 
               src={BlueJay}
               alt="BlueJay"

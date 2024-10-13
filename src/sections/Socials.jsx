@@ -10,7 +10,7 @@ const Socials = () => {
         Social Media Accounts
         </h1>
       </div>
-      <div class="max-container lg:grid lg:grid-cols-3 lg:gap-7 py-5 lg:px-10 gap-4 flex-col flex flex-wrap justify-center">
+      <div class="max-container lg:grid lg:grid-cols-3 lg:gap-5 py-5 lg:px-10 gap-4 flex-col flex flex-wrap justify-center">
       {/* <div class="max-container flex justify-center flex-wrap gap-4 lg:gap-9 py-4 max-sm:flex-col"> */}
       {socials.map((social) => (
         <SocialCard key={social.label} {...social}/>
