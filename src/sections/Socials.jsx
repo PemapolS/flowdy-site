@@ -4,9 +4,9 @@ import SocialCard from '../components/SocialCard';
 const Socials = () => {
   return (
     <section id="socials" class="py-2 px-4 mx-auto max-w-screen-xl lg:px-6 gap-4 items-center">
-    <div class="max-container justify-center flex-wrap rounded-[20px] shadow-3xl px-10 py-7 ring-1 ring-slate-900/5 dark:bg-slate-500/5 items-start">
+    <div class="max-container justify-center flex-wrap rounded-[20px] shadow-3xl px-6 lg:px-10 py-6 lg:py-7 ring-1 ring-slate-900/5 dark:bg-slate-500/5 items-start">
       <div>
-        <h1 class="max-w-screen-md b-4 text-[40px] tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">
+        <h1 class="max-w-screen-md b-4 text-[34px] lg:text-[40px] tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">
         Social Media Accounts
         </h1>
       </div>
