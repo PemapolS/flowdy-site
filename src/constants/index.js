@@ -11,12 +11,6 @@ export const navLinks = [
 
 export const events = [
     {
-        imgURL: flagTH,
-        label: "Thaitails 2024",
-        location: "Nonthaburi, Thailand",
-        date: "23-24 March"
-    },
-    {
         imgURL: flagTW,
         label: "FurMIT 2024",
         location: "Yilan, Taiwan",
@@ -39,6 +33,18 @@ export const events = [
         label: "FURUM 2024",
         location: "Petaling Jaya, Malaysia",
         date: "7-8 December"
+    },
+    {
+        imgURL: flagTH,
+        label: "Thaitails 2025",
+        location: "Nonthaburi, Thailand",
+        date: "22-23 March"
+    },
+    {
+        imgURL: flagTH,
+        label: "BangkokBeasts 2025",
+        location: "Bangkok, Thailand",
+        date: "TBA"
     }
 ]
 
