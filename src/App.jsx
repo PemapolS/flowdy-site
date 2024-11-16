@@ -13,7 +13,7 @@ const App = () => (
     <section className="padding-x">
       <Events />
     </section>
-    <section className="padding">
+    <section className="padding-x">
       <Socials />
     </section>
     <section className="padding-x py-8 bg-sky-500/30">

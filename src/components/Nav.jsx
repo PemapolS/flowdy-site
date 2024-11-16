@@ -51,10 +51,10 @@ const Nav = () => {
                     </li>
                 ))}
             </ul>
-            <button id="toggleDark" onClick={toggleTheme} class="pl-10 block dark:hidden">
+            <button id="toggleDark" onClick={toggleTheme} className="pl-10 block dark:hidden">
                 <FontAwesomeIcon icon={faMoon} size="lg" />
             </button>
-            <button id="toggleDark" onClick={toggleTheme} class="pl-10 hidden dark:block">
+            <button id="toggleDark" onClick={toggleTheme} className="pl-10 hidden dark:block">
                 <FontAwesomeIcon icon={faSun} size="lg" style={{color: "#ffffff",}} />
             </button>
             {/* <div>
