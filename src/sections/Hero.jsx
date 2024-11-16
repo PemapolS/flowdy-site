@@ -8,7 +8,7 @@ const Hero = () => {
     <section
         id="home"
         className="w-full items-end flex xl:flex-row justify-center min-h-screen bg-hero bg-clip-border bg-origin-border bg-center bg-no-repeat bg-cover bg-blend-overlay bg-black/10">
-        <div className="relative drop-shadow-2xl xl:w-2/5 w-3/4 flex flex-col items-start whitespace-nowrap pb-24 lg:pb-44 z-10">
+        <div className="relative drop-shadow-2xl xl:w-3/5 w-3/4 flex flex-col items-start whitespace-nowrap pb-24 lg:pb-32 z-10">
             <h1 className="text-[80px] font-montserrat text-white max-sm:text-[70px] font-bold">
                 <span>Flowdy</span>
             </h1>
