@@ -15,7 +15,10 @@ const Hero = () => {
             <h2 className="text-[40px] max-sm:text-2xl font-medium max-sm:text-[30px] max-sm:pb-5 text-white">
                 <span className="font-ibm">โฟล-ดี้ |</span> <span className="font-noto">フローディ</span>
             </h2>
-            <Button label="Contact" iconURL={arrowRight} dest="#socials" />
+            <div className="py-2">
+             <Button label="Contact" iconURL={arrowRight} dest="#socials" />
+            </div>
+            
         </div>
     </section>
   )
