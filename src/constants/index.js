@@ -42,8 +42,20 @@ export const events = [
     },
     {
         imgURL: flagTH,
+        label: "SiamPaws 2025",
+        location: "Bangkok, Thailand",
+        date: "7-8 June"
+    },
+    {
+        imgURL: flagTH,
         label: "BangkokBeasts 2025",
         location: "Bangkok, Thailand",
+        date: "TBA"
+    },
+    {
+        imgURL: flagMY,
+        label: "FURUM 2025",
+        location: "Petaling Jaya, Malaysia",
         date: "TBA"
     }
 ]
