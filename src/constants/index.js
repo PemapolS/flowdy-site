@@ -10,30 +10,30 @@ export const navLinks = [
 ];
 
 export const events = [
-    {
-        imgURL: flagTW,
-        label: "FurMIT 2024",
-        location: "Yilan, Taiwan",
-        date: "13-14 July"
-    },
-    {
-        imgURL: flagTH,
-        label: "FurSquare 2024",
-        location: "Bangkok, Thailand",
-        date: "7 September"
-    },
-    {
-        imgURL: flagTH,
-        label: "BangkokBeasts 2024",
-        location: "Bangkok, Thailand",
-        date: "10 November"
-    },    
-    {
-        imgURL: flagMY,
-        label: "FURUM 2024",
-        location: "Petaling Jaya, Malaysia",
-        date: "7-8 December"
-    },
+    // {
+    //     imgURL: flagTW,
+    //     label: "FurMIT 2024",
+    //     location: "Yilan, Taiwan",
+    //     date: "13-14 July"
+    // },
+    // {
+    //     imgURL: flagTH,
+    //     label: "FurSquare 2024",
+    //     location: "Bangkok, Thailand",
+    //     date: "7 September"
+    // },
+    // {
+    //     imgURL: flagTH,
+    //     label: "BangkokBeasts 2024",
+    //     location: "Bangkok, Thailand",
+    //     date: "10 November"
+    // },    
+    // {
+    //     imgURL: flagMY,
+    //     label: "FURUM 2024",
+    //     location: "Petaling Jaya, Malaysia",
+    //     date: "7-8 December"
+    // },
     {
         imgURL: flagTH,
         label: "Thaitails 2025",
