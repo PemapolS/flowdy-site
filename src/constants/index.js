@@ -50,13 +50,13 @@ export const events = [
         imgURL: flagTH,
         label: "BangkokBeasts 2025",
         location: "Bangkok, Thailand",
-        date: "TBA"
+        date: "15 November"
     },
     {
         imgURL: flagMY,
         label: "FURUM 2025",
         location: "Petaling Jaya, Malaysia",
-        date: "TBA"
+        date: "December"
     }
 ]
 
