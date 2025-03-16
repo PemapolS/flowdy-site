@@ -48,7 +48,7 @@ export const events = [
     },
     {
         imgURL: flagAU,
-        label: "Paws Outdoors 2025",
+        label: "Paws Outdoors (Oct 2025)",
         location: "NSW, Australia",
         date: "October"
     },
