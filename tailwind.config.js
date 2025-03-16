@@ -35,7 +35,7 @@ export default {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage: {
-        'hero': "url('assets/images/big-photo1.jpg')",
+        'hero': "url('assets/images/big-photo2.jpg')",
         'card': "url('assets/images/thumbnail-background.svg')",
       },
       screens: {
