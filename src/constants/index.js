@@ -1,4 +1,4 @@
-import { flagTH, flagMY, flagTW } from "../assets/flags";
+import { flagTH, flagMY, flagTW, flagAU } from "../assets/flags";
 import { faTwitter, faFacebook, faTelegram, faBluesky, faTumblr, faSteam, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { faHouse, faPaw } from '@fortawesome/free-solid-svg-icons'
 
@@ -47,10 +47,10 @@ export const events = [
         date: "7-8 June"
     },
     {
-        imgURL: flagTH,
-        label: "BangkokBeasts 2025",
-        location: "Bangkok, Thailand",
-        date: "15 November"
+        imgURL: flagAU,
+        label: "Paws Outdoors 2025",
+        location: "NSW, Australia",
+        date: "October"
     },
     {
         imgURL: flagMY,
