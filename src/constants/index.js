@@ -56,7 +56,7 @@ export const events = [
         imgURL: flagMY,
         label: "FURUM 2025",
         location: "Petaling Jaya, Malaysia",
-        date: "December"
+        date: "13-14 December"
     }
 ]
 
