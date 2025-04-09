@@ -41,6 +41,12 @@ export const events = [
         date: "22-23 March"
     },
     {
+        imgURL: flagMY,
+        label: "???",
+        location: "Johor Bahru, Malaysia",
+        date: "May"
+    },
+    {
         imgURL: flagTH,
         label: "SiamPaws 2025",
         location: "Bangkok, Thailand",
@@ -49,7 +55,7 @@ export const events = [
     {
         imgURL: flagAU,
         label: "Paws Outdoors (Oct 2025)",
-        location: "NSW, Australia",
+        location: "New South Wales, Australia",
         date: "October"
     },
     {
