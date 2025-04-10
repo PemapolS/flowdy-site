@@ -3,7 +3,7 @@ import { faTwitter, faFacebook, faTelegram, faBluesky, faTumblr, faSteam, faSpot
 import { faHouse, faPaw } from '@fortawesome/free-solid-svg-icons'
 
 export const navLinks = [
-    { href: "#home", label: "Home" },
+    // { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
     { href: "#events", label: "Events" },
     { href: "#socials", label: "Socials" },
