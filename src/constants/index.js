@@ -44,7 +44,7 @@ export const events = [
         imgURL: flagMY,
         label: "Private Event",
         location: "Johor Bahru, Malaysia",
-        date: "May"
+        date: "11 May"
     },
     {
         imgURL: flagTH,
