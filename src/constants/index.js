@@ -56,7 +56,7 @@ export const events = [
         imgURL: flagAU,
         label: "WAFF 2025",
         location: "Western Australia, Australia",
-        date: "October"
+        date: "19 - 21 September"
     },
     {
         imgURL: flagAU,
