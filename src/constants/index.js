@@ -40,6 +40,12 @@ export const events = [
         location: "Nonthaburi, Thailand",
         date: "22-23 March"
     },
+        {
+        imgURL: flagMY,
+        label: "Furlieu",
+        location: "Johor Bahru, Malaysia",
+        date: "11 May"
+    },
     {
         imgURL: flagTH,
         label: "SiamPaws 2025",
