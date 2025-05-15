@@ -42,7 +42,7 @@ export const events = [
     },
         {
         imgURL: flagMY,
-        label: "FurLieu",
+        label: "Furlieu",
         location: "Johor Bahru, Malaysia",
         date: "11 May"
     },
