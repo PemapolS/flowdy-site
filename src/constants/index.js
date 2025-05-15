@@ -42,7 +42,7 @@ export const events = [
     },
         {
         imgURL: flagMY,
-        label: "Furlieu",
+        label: "FurLieu",
         location: "Johor Bahru, Malaysia",
         date: "11 May"
     },
@@ -63,13 +63,13 @@ export const events = [
         label: "Paws Outdoors (Oct 2025)",
         location: "New South Wales, Australia",
         date: "October"
-    },
-    {
-        imgURL: flagMY,
-        label: "FURUM 2025",
-        location: "Petaling Jaya, Malaysia",
-        date: "13-14 December"
     }
+    // {
+    //     imgURL: flagMY,
+    //     label: "FURUM 2025",
+    //     location: "Petaling Jaya, Malaysia",
+    //     date: "13-14 December"
+    // }
 ]
 
 export const socials = [
