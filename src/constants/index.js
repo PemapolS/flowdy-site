@@ -44,7 +44,7 @@ export const events = [
         imgURL: flagMY,
         label: "Furlieu",
         location: "Johor Bahru, Malaysia",
-        date: "11 May"
+        date: "May"
     },
     {
         imgURL: flagTH,
