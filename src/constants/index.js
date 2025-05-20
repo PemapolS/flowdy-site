@@ -57,13 +57,13 @@ export const events = [
         label: "WAFF 2025",
         location: "Western Australia, Australia",
         date: "19-21 September"
-    },
-    {
-        imgURL: flagAU,
-        label: "Paws Outdoors (Oct 2025)",
-        location: "New South Wales, Australia",
-        date: "October"
     }
+    // {
+    //     imgURL: flagAU,
+    //     label: "Paws Outdoors (Oct 2025)",
+    //     location: "New South Wales, Australia",
+    //     date: "October"
+    // }
     // {
     //     imgURL: flagMY,
     //     label: "FURUM 2025",
