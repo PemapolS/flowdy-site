@@ -55,8 +55,14 @@ export const events = [
     {
         imgURL: flagAU,
         label: "WAFF 2025",
-        location: "Western Australia, Australia",
+        location: "Fremantle, WA",
         date: "19-21 September"
+    },
+    {
+        imgURL: flagAU,
+        label: "FurJAM 2025",
+        location: "Parramatta, NSW",
+        date: "26-28 September"
     }
     // {
     //     imgURL: flagAU,
