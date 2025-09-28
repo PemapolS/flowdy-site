@@ -63,13 +63,13 @@ export const events = [
         label: "FurJAM 2025",
         location: "Parramatta, NSW",
         date: "26-28 September"
+    },
+    {
+        imgURL: flagAU,
+        label: "Tails of Terror 4",
+        location: "Spring Hill, QLD",
+        date: "17-19 October"
     }
-    // {
-    //     imgURL: flagAU,
-    //     label: "Paws Outdoors (Oct 2025)",
-    //     location: "New South Wales, Australia",
-    //     date: "October"
-    // }
     // {
     //     imgURL: flagMY,
     //     label: "FURUM 2025",
