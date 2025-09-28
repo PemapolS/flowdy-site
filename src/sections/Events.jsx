@@ -13,9 +13,9 @@ const Events = () => {
       ))}
       </div>
 
-      <h2 className="max-w-screen-md text-xl font-medium text-gray-900 dark:text-white font-ibm pt-4">
+      {/* <h2 className="max-w-screen-md text-xl font-medium text-gray-900 dark:text-white font-ibm pt-4">
         and more coming soon!
-      </h2>
+      </h2> */}
     </section>
   )
 }
