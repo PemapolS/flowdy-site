@@ -21,7 +21,7 @@ export default {
       fontFamily: {
         palanquin: ['Palanquin', 'sans-serif'],
         montserrat: ['Montserrat', 'sans-serif'],
-        noto: ['Noto Sans', 'sans-serif'],
+        notojp: ['Noto Sans JP', 'sans-serif'],
         ibm: ['IBM Plex Sans Thai', 'sans-serif'],
       },
       colors: {

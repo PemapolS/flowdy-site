@@ -13,7 +13,7 @@ const Hero = () => {
                 <span>Flowdy</span>
             </h1>
             <h2 className="text-[40px] max-sm:text-2xl font-medium max-sm:text-[30px] max-sm:pb-5 text-white">
-                <span className="font-ibm">โฟล-ดี้ |</span> <span className="font-noto">フローディ</span>
+                <span className="font-ibm">โฟล-ดี้ |</span> <span className="font-notojp">フローディ</span>
             </h2>
             <div className="py-2">
              <Button label="Contact" iconURL={arrowRight} dest="#socials" />
