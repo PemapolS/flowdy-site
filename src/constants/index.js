@@ -69,13 +69,19 @@ export const events = [
         label: "Tails of Terror 4",
         location: "Spring Hill, QLD",
         date: "17-19 October"
-    }
+    },
     // {
     //     imgURL: flagMY,
     //     label: "FURUM 2025",
     //     location: "Petaling Jaya, Malaysia",
     //     date: "13-14 December"
     // }
+    {
+        imgURL: flagAU,
+        label: "Floof Doof New Years 2025",
+        location: "Brunswick, VIC",
+        date: "31 December"
+    }
 ]
 
 export const socials = [
