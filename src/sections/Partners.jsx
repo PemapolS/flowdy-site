@@ -3,9 +3,9 @@ import {Fez, BlueJay} from '../assets/images';
 const Partners = () => {
   return (
     <section id="socials" className="py-2 px-4 mx-auto max-w-screen-xl lg:px-6 gap-4 items-center">
-      <h1 className="max-w-screen-md b-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">
+      {/* <h1 className="max-w-screen-md b-4 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">
         Also check out my partners...
-      </h1>
+      </h1> */}
       <div className="grid grid-cols-2 lg:flex lg:flex-1 justify-evenly items-center gap-3 lg:gap-10 py-4">
         <a href="https://fez.pet">
           <div className="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 hover:bg-slate-600/15 dark:hover:bg-white/10 shadow-sm">
