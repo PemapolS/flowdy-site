@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import { arrowRight } from "../../public/icons/";
 import { bigPhoto1 } from "../../public/images";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
