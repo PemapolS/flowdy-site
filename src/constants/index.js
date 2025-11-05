@@ -7,7 +7,7 @@ export const navLinks = [
     { href: "/#about", label: "About" },
     { href: "/#events", label: "Events" },
     { href: "/#socials", label: "Socials" },
-    { href: "/reference", label: "Reference" },
+    { href: "/reference/sfw", label: "Reference" },
 ];
 
 export const events = [
