@@ -34,8 +34,13 @@
     "./dist/types/**/*.ts",
     "./next-env.d.ts",
     "dist/types/**/*.ts",
-    "dist/dev/types/**/*.ts"
-, "public/flags", "public/icons", "public/images"  ],
+    "dist/dev/types/**/*.ts",
+    "public/flags",
+    "public/icons",
+    "public/images",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ],
   "exclude": [
     "./node_modules"
   ]
