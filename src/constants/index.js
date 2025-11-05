@@ -1,4 +1,4 @@
-import { flagTH, flagMY, flagTW, flagAU } from "../assets/flags";
+import { flagTH, flagMY, flagTW, flagAU } from "../../public/flags";
 import { faTwitter, faFacebook, faTelegram, faBluesky, faTumblr, faSteam, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { faHouse, faPaw } from '@fortawesome/free-solid-svg-icons'
 

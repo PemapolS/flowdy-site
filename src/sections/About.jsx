@@ -1,4 +1,4 @@
-import {aboutPhoto} from "../assets/images";
+import {aboutPhoto} from "../../public/images";
 
 const About = () => {
   return (
@@ -13,7 +13,7 @@ const About = () => {
         </div>
         <div>
           <img 
-          src={aboutPhoto}
+          src={aboutPhoto.src}
           alt="About photo"
           width={500}
           />

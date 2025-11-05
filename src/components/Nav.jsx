@@ -1,4 +1,4 @@
-import { headerLogo } from '../assets/images';
+import { headerLogo } from '../../public/images';
 import { navLinks } from '../constants';
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -33,7 +33,7 @@ const Nav = () => {
         <nav className="flex justify-between items-center max-container">
             <a href="/">
                 <img 
-                    src={headerLogo}
+                    src={headerLogo.src}
                     alt="Logo"
                     width={80}
                     height={80}

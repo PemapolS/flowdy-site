@@ -1,4 +1,4 @@
-import {Fez, BlueJay} from '../assets/images';
+import {Fez, BlueJay} from '../../public/images';
 
 const Partners = () => {
   return (
@@ -10,7 +10,7 @@ const Partners = () => {
         <a href="https://fez.pet">
           <div className="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 hover:bg-slate-600/15 dark:hover:bg-white/10 shadow-sm">
             <img 
-              src={Fez}
+              src={Fez.src}
               alt="Fez"
               className="rounded-full object-cover w-28 h-28 self-center"
             />
@@ -22,7 +22,7 @@ const Partners = () => {
         <a href="https://linktr.ee/BlueJaytheWolf">
           <div className="flex justify-center flex-col px-5 py-5 lg:px-8 rounded-xl bg-white/50 dark:bg-slate-300/5 hover:bg-slate-600/15 dark:hover:bg-white/10 shadow-sm">
             <img 
-              src={BlueJay}
+              src={BlueJay.src}
               alt="BlueJay"
               className="rounded-full object-cover w-28 h-28 self-center"
             />

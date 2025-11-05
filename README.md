@@ -5,5 +5,5 @@ It is currently live on https://flowdy.dog.
 
 ## Frameworks Used
 - React
-- Vite
+- ~~Vite~~ NextJS
 - Tailwind CSS
