@@ -35,7 +35,8 @@ export default {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage: {
-        'hero': "url('../public/images/big-photo2.jpg')"
+        'hero': "url('../public/images/big-photo2.jpg')",
+        'header-ref-flowdy': "url('../public/images/Header-RefFlowdy.jpg')"
       },
       screens: {
         "wide": "1440px"

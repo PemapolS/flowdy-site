@@ -5,22 +5,43 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
-    const [theme, setTheme] = useState(() => {
-        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            return 'dark';
-        } else {
-            return 'light';
+    const [theme, setTheme] = useState('light');
+
+    // Read prefers-color-scheme and keep it in sync (only runs on client)
+    useEffect(() => {
+        if (typeof window === 'undefined' || typeof window.matchMedia !== 'function') return;
+
+        const mq = window.matchMedia('(prefers-color-scheme: dark)');
+        const handleChange = (e) => setTheme(e.matches ? 'dark' : 'light');
+
+        // initial
+        setTheme(mq.matches ? 'dark' : 'light');
+
+        // subscribe
+        if (mq.addEventListener) {
+        mq.addEventListener('change', handleChange);
+        } else if (mq.addListener) {
+        mq.addListener(handleChange);
         }
-    });
-    
-      // Effect to update the DOM class based on the theme
-      useEffect(() => {
+
+        return () => {
+        if (mq.removeEventListener) {
+            mq.removeEventListener('change', handleChange);
+        } else if (mq.removeListener) {
+            mq.removeListener(handleChange);
+        }
+        };
+    }, []);
+
+    // Apply theme class to document (client only)
+    useEffect(() => {
+        if (typeof document === 'undefined') return;
         if (theme === 'dark') {
-          document.documentElement.classList.add('dark');
+        document.documentElement.classList.add('dark');
         } else {
-          document.documentElement.classList.remove('dark');
+        document.documentElement.classList.remove('dark');
         }
-      }, [theme]);
+    }, [theme]);
     
       // Function to toggle between themes
       const toggleTheme = () => {
