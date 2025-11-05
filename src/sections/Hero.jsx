@@ -1,7 +1,8 @@
 import Button from "../components/Button";
-import { arrowRight } from "../assets/icons/";
-import { bigPhoto1 } from "../assets/images";
-
+import { arrowRight } from "../../public/icons/";
+import { bigPhoto1 } from "../../public/images";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons'
 
 const Hero = () => {
   return (
@@ -16,7 +17,12 @@ const Hero = () => {
                 <span className="font-ibm">โฟล-ดี้ |</span> <span className="font-notojp">フローディ</span>
             </h2>
             <div className="py-2">
-             <Button label="Contact" iconURL={arrowRight} dest="#socials" />
+              <a href='#socials'>
+                  <button className="flex justify-center items-center gap-2 px-7 py-4 font-ibm font-medium text-lg leading-none bg-purple-400 dark:bg-fuchsia-900 text-white rounded-2xl">
+                      Contact
+                      <FontAwesomeIcon icon={faArrowDown} style={{color: "#ffffff",}} />
+                  </button>
+              </a>
             </div>
             
         </div>
