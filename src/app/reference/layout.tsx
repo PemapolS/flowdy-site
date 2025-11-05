@@ -20,11 +20,11 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     return (
         <main className="relative bg-white dark:bg-gray-900">
             <Nav />
-            <section className="bg-hero bg-cover bg-center" id="title">
-                <div className="px-8 md:px-20 lg:px-60 backdrop-blur-lg">
+            <section className="bg-header-ref-flowdy bg-cover bg-center" id="title">
+                <div className="px-8 md:px-20 lg:px-60 backdrop-blur-sm">
                 <div className="flex pt-32 pb-6 mx-auto max-w-screen-xl gap-4 flex-col">
                     <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-white font-ibm">Flowdy Character Information</h2>
-                    <p className="mb-8 sm:text-lg text-gray-500 font-ibm">Reference Sheets and Basic Information about Flowdy</p>
+                    <p className="mb-8 sm:text-lg text-gray-300 font-ibm">Reference Sheets and Basic Information about Flowdy</p>
                 </div>
                 </div>
             </section>

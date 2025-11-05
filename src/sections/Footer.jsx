@@ -1,4 +1,7 @@
+import { usePathname } from 'next/navigation';
+
 const Footer = () => {
+  const pathname = usePathname();
   const year = new Date().getFullYear()
   return (
     <section id="events" className="py-2 mx-auto max-w-screen-xl gap-4 items-center">
