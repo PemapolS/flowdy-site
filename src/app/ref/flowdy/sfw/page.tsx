@@ -5,7 +5,7 @@ export default function SfwPage() {
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
             <h2 className=" text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Flowdy the Husky</h2>
             <h2 className="text-2xl tracking-tight font-medium text-gray-700 dark:text-gray-300 font-ibm">Flowdy Martin</h2>
-            <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">Flowdy is a friendly purple husky from Bangkok, Thailand. Fictionally working as an airport ground crew, he loves the cold and is a stickler for rules.</p>
+            <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">Flowdy is a friendly purple husky from Bangkok, Thailand. He works as an airport ground crew, specifically as an aircraft marshaller. He loves the cold and rain. Wanting to do everything by the book, he is a stickler for rules and regulations.</p>
             
             {/* Character bio table */}
             <section aria-labelledby="character-bio" className="w-full">
