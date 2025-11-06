@@ -94,17 +94,17 @@ const Footer = () => {
   const MiddleContent = variantRenderers[variant] ?? variantRenderers.home;
 
   return (
-    <section id="events" className="py-2 mx-auto max-w-screen-xl gap-4 items-center">
+    <section className="py-2 mx-auto max-w-screen-xl gap-4 items-center">
       <p className="font-ibm text-white">
-
-        {/* variant-dependent middle content */}
         <MiddleContent />
       </p>
 
-      {/* Copyright is always present */}
       <p className="font-ibm text-white font-medium">
-        © {year} Flowdy Husky
-      </p>
+          <span className="inline-block group">
+            <span className="block group-hover:hidden">© {year} Flowdy Husky</span>
+            <span className="hidden group-hover:inline-block">Made with <span aria-hidden>❤</span> by Flowdy</span>
+          </span>
+        </p>
     </section>
   );
 }
