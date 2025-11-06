@@ -30,10 +30,10 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             </section>
             <div className="py-6 px-8 md:px-20 lg:px-60">
                 <nav className="flex mx-auto max-w-screen-xl gap-2">
-                    <Link href="/reference/sfw" className={linkClass("/sfw")}>
+                    <Link href="/ref/sfw" className={linkClass("/sfw")}>
                         SFW
                     </Link>
-                    <Link href="/reference/nsfw" className={linkClass("/nsfw")}>
+                    <Link href="/ref/nsfw" className={linkClass("/nsfw")}>
                         NSFW
                     </Link>
                 </nav>
