@@ -17,9 +17,13 @@ const Hero = () => {
             </h2>
             <div className="py-2">
               <a href='#socials'>
-                  <button className="flex justify-center items-center gap-2 px-7 py-4 font-ibm font-medium text-lg leading-none bg-purple-400 dark:bg-fuchsia-900 text-white rounded-2xl">
-                      Contact
-                      <FontAwesomeIcon icon={faArrowDown} style={{color: "#ffffff",}} />
+                  <button
+                    className="group flex justify-center items-center gap-2 px-7 py-4 font-ibm font-medium text-lg leading-none bg-purple-400 dark:bg-fuchsia-900 text-white rounded-2xl
+                               transition-transform duration-200 ease-out transform hover:scale-[1.03] hover:shadow-lg hover:bg-purple-500 dark:hover:bg-fuchsia-800
+                               active:scale-95 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-500"
+                  >
+                      <span className="relative z-10">Contact</span>
+                      <FontAwesomeIcon icon={faArrowDown} className="text-white transition-transform duration-200 ease-out group-hover:translate-y-1" />
                   </button>
               </a>
             </div>
