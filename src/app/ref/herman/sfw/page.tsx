@@ -110,7 +110,7 @@ export default function SfwPage() {
                   <h4 className="text-2xl font-semibold text-gray-900 dark:text-white">Dislikes</h4>
                   <ul className="mt-3 space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
                     <li>Cold and rainy weather</li>
-                    <li>Crowded</li>
+                    <li>Crowded environments</li>
                     <li>Being rushed or forced into situations</li>
                     <li>Sudden loud noises</li>
                     <li>Arbitrary rules</li>
