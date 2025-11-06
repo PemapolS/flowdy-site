@@ -18,7 +18,7 @@ export default function NsfwPage() {
                         className="rounded-lg"
                     />
                     <p className="text-gray-500 sm:text-md dark:text-gray-400 font-ibm">
-                        Art by <a href ="https://trashmutt.com/">
+                        Art by <a href ="https://trashmutt.com/" className="over:text-purple-600 dark:hover:text-purple-300 transition-colors">
                             Kota (TrashMutt)
                         </a>
                     </p>
