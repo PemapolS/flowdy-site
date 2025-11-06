@@ -2,24 +2,49 @@ import {aboutPhoto} from "../../public/images";
 
 const About = () => {
   return (
-    <section className="" id="about">
-    <div className="flex py-16 px-4 mx-auto max-w-screen-xl xl:py-8 lg:px-6 gap-4 items-center flex-col lg:flex-row">
+    <section id="about" className="font-ibm">
+      <div className="flex py-12 px-4 mx-auto max-w-screen-xl xl:py-8 lg:px-6 gap-6 items-center flex-col lg:flex-row">
         <div className="max-w-screen-md">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Introduction</h2>
-            <p className="mb-8 text-gray-500 sm:text-lg dark:text-gray-400 font-ibm">Hi, I am Flowdy! I am an Information and Communication Engineering student from Thailand. I dabble in graphics design, web design, and photography in my free time. I also help out with some of the local cons. I love traveling and meeting new people. Although, I can be a little shy so please be patient with me. I am also a <a href="https://x.com/lupesuits" target="_blank" className="text-black dark:text-white-400">LupeSuits</a> suiter!<br/></p>
-            <p className="mb-8 text-gray-500 sm:text-lg dark:text-gray-400 font-ibm">
+          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+            Introduction
+          </h2>
+          <p className="mb-6 text-gray-700 sm:text-md dark:text-gray-300">
+            Hi, I am Flowdy! I am an Information and Communication Engineering student from Thailand. I dabble in graphics design, web design, and photography in my free time. I also help out with some of the local cons. I love traveling and meeting new people. Although, I can be a little shy so please be patient with me. I am also a{' '}
+            <a
+              href="https://www.furaffinity.net/user/LazyLupe"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-300 transition-colors"
+            >
+              LupeSuits
+            </a>{' '}
+            suiter!
+          </p>
+          <p className="mb-8 text-gray-700 sm:text-md dark:text-gray-300">
             Thanks for sticking around!
-            </p>
+          </p>
         </div>
-        <div>
-          <img 
-          src={aboutPhoto.src}
-          alt="About photo"
-          width={500}
+        <div className="w-full flex flex-col items-center">
+          <img
+            src={aboutPhoto.src}
+            alt="About photo"
+            className="w-full max-w-[500px] h-auto rounded-lg object-cover"
+            loading="lazy"
           />
+          <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center mt-2">
+            Photo by{' '}
+            <a
+              className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors"
+              href="https://x.com/Ryusuke6351"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Ryusuke
+            </a>
+          </p>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
   )
 }
 
