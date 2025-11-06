@@ -18,7 +18,7 @@ export default function SfwPage() {
                         className="rounded-lg"
                     />
                     <p className="text-gray-500 sm:text-md dark:text-gray-400 font-ibm">
-                        Art by <a href ="https://trashmutt.com/">
+                        Art by <a href ="https://trashmutt.com/" className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors">
                             Kota (TrashMutt)
                         </a>
                     </p>
@@ -37,9 +37,9 @@ export default function SfwPage() {
                         className="rounded-lg"
                     />
                     <p className="text-gray-500 sm:text-md dark:text-gray-400 font-ibm">
-                        Fursuit by <a href ="https://www.furaffinity.net/user/LazyLupe">
+                        Fursuit by <a href ="https://www.furaffinity.net/user/LazyLupe" className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors">
                             LupeSuits
-                        </a> | Photo by <a href ="https://ryuuwolf.gay">
+                        </a> | Photo by <a href ="https://ryuuwolf.gay" className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors">
                             Ryuu
                         </a>
                     </p>
