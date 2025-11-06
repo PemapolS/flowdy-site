@@ -8,21 +8,69 @@ const Footer = () => {
   // Add new rules here to support more paths (first match wins).
   const rules = [
     { prefix: '/ref', variant: 'ref' },
-    // example: { prefix: '/docs', variant: 'docsCredit' },
+    { prefix: '/ref/flowdy/sfw', variant: 'flowdyref' },
+    { prefix: '/ref/flowdy/nsfw', variant: 'flowdyref' },
+    { prefix: '/ref/marvin/sfw', variant: 'marvinref' },
+    { prefix: '/ref/marvin/nsfw', variant: 'marvinref' },
+    { prefix: '/ref/herman/sfw', variant: 'hermanref' },
+    { prefix: '/ref/herman/nsfw', variant: 'hermanref' },
   ];
 
   // Map variant keys to rendering functions / content.
   const variantRenderers = {
     ref: () => (
       <span className="">
+        <span className="">Icon Art by Pastaiils,{' '}
+        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="http://pupsonar.carrd.co/" target="_blank" rel="noreferrer">
+          PupSonar
+        </a>
+        </span>
+        <br className="block lg:hidden" />
+        <span className="hidden lg:inline px-1">|</span>
+        Banner Art by{' '}
+        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://linktr.ee/merridoodles" target="_blank" rel="noreferrer">
+          Merridoodles
+        </a>
+      </span>),
+
+    flowdyref: () => (
+      <span className="">
+        <span className="">Icon Art by Pastaiils</span>
+        <br className="block lg:hidden" />
+        <span className="hidden lg:inline px-1">|</span>
         Banner Photo by{' '}
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://sekailens.com/" target="_blank" rel="noreferrer">
           SekaiLens
         </a>
       </span>),
 
+    marvinref: () => (
+      <span className="">
+        <span className="">Icon Art by Pastaiils</span>
+        <br className="block lg:hidden" />
+        <span className="hidden lg:inline px-1">|</span>
+        Banner Art by{' '}
+        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="http://pupsonar.carrd.co/" target="_blank" rel="noreferrer">
+          PupSonar
+        </a>
+      </span>),
+
+    hermanref: () => (
+      <span className="">
+        <span className="">Icon Art by Pastaiils</span>
+        <br className="block lg:hidden" />
+        <span className="hidden lg:inline px-1">|</span>
+        Banner Art by{' '}
+        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
+          Kota (TrashMutt)
+        </a>
+      </span>),
+
     home: () => (
       <span className="">
+        <span className="">Icon Art by Pastaiils</span>
+        <br className="block lg:hidden" />
+        <span className="hidden lg:inline px-1">|</span>
         Banner Photo by{' '}
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://x.com/callmenoop" target="_blank" rel="noreferrer">
           Flamey
@@ -33,13 +81,12 @@ const Footer = () => {
         </a> */}
       </span>
     ),
-    // add more renderers as needed
   };
 
   // Determine which variant applies to the current pathname
   const getVariant = (path) => {
     if (!path) return 'photos';
-    const match = rules.find((r) => path.startsWith(r.prefix));
+    const match = rules.find((r) => path.endsWith(r.prefix));
     return match ? match.variant : 'photos';
   };
 
@@ -48,12 +95,7 @@ const Footer = () => {
 
   return (
     <section id="events" className="py-2 mx-auto max-w-screen-xl gap-4 items-center">
-      {/* Always show Icon Art and the CREDIT / Photos segment on one line for larger screens,
-          and stacked on small screens for readability */}
       <p className="font-ibm text-white">
-        <span className="">Icon Art by Pastaiils</span>
-        <br className="block lg:hidden" />
-        <span className="hidden lg:inline px-1">|</span>
 
         {/* variant-dependent middle content */}
         <MiddleContent />
