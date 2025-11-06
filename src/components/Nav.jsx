@@ -58,7 +58,7 @@ const Nav = () => {
 
     return (
 
-    <header className="padding-x py-6 absolute z-50 w-full bg-gradient-to-b from-cyan-600 dark:from-gray-800">
+    <header className="fixed padding-x py-6 z-50 w-full bg-gradient-to-b from-cyan-600 dark:from-gray-800">
         <nav className="flex justify-between items-center max-container gap-4">
             <a href="/" className="flex items-center" aria-label="Home">
                 <img 
