@@ -36,7 +36,10 @@ export default {
       },
       backgroundImage: {
         'hero': "url('../public/images/big-photo2.jpg')",
-        'header-ref-flowdy': "url('../public/images/Header-RefFlowdy.jpg')"
+        'header-ref': "url('../public/images/HB00-009.png')",
+        'header-ref-flowdy': "url('../public/images/Header-RefFlowdy.jpg')",
+        'header-ref-marvin': "url('../public/images/FB02-004_Banner.png')",
+        'header-ref-herman': "url('../public/images/HB03-001_Banner.png')",
       },
       screens: {
         "wide": "1440px"
