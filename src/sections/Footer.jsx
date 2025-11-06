@@ -15,7 +15,7 @@ const Footer = () => {
   const variantRenderers = {
     ref: () => (
       <span className="">
-        Photo by{' '}
+        Banner Photo by{' '}
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://sekailens.com/" target="_blank" rel="noreferrer">
           SekaiLens
         </a>
@@ -23,14 +23,14 @@ const Footer = () => {
 
     home: () => (
       <span className="">
-        Photos by{' '}
+        Banner Photo by{' '}
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://x.com/callmenoop" target="_blank" rel="noreferrer">
           Flamey
         </a>
-        {', '}
+        {/* {', '}
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://x.com/Ryusuke6351" target="_blank" rel="noreferrer">
           Ryusuke
-        </a>
+        </a> */}
       </span>
     ),
     // add more renderers as needed

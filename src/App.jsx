@@ -7,13 +7,16 @@ const App = () => (
     <section className="xl:padding-1">
       <Hero />
     </section>
-    <section className="padding-x">
+
+    <section className="max-w-6xl mx-auto px-6">
       <About />
     </section>
-    <section className="padding-x">
+
+    <section className="max-w-6xl mx-auto px-6">
       <Events />
     </section>
-    <section className="padding-x">
+
+    <section className="max-w-6xl mx-auto px-6">
       <Socials />
     </section>
     <section className="padding-x py-8 bg-sky-500/30">
