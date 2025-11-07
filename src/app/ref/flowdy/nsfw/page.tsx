@@ -75,7 +75,7 @@ export default function NsfwPage() {
                     </tr>
 
                     <tr>
-                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Penis Girth</th>
+                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Penis Diameter</th>
                       <td className="py-2 text-sm text-gray-900 dark:text-white">54 mm</td>
                     </tr>
                   </tbody>
