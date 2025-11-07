@@ -1,13 +1,22 @@
 "use client";
-import { headerLogo } from '../../public/images';
+import { navLogoFlowdy, navLogoMarvin, navLogoHerman } from '../../public/images';
 import { navLinks } from '../constants';
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun, faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import { usePathname } from 'next/navigation';
 
 const Nav = () => {
     const [theme, setTheme] = useState('dark');
     const [mobileOpen, setMobileOpen] = useState(false);
+    const pathname = usePathname() ?? '';
+
+    // pick logo based on ref slug
+    const logoImage = pathname.startsWith('/ref/marvin')
+      ? navLogoMarvin ?? navLogo
+      : pathname.startsWith('/ref/herman')
+      ? navLogoHerman ?? navLogo
+      : navLogoFlowdy;
 
     // Read prefers-color-scheme and keep it in sync (only runs on client)
     useEffect(() => {
@@ -62,7 +71,7 @@ const Nav = () => {
         <nav className="flex justify-between items-center max-container gap-4">
             <a href="/" className="flex items-center" aria-label="Home">
                 <img 
-                    src={headerLogo.src}
+                    src={logoImage.src}
                     alt="Logo"
                     width={80}
                     height={80}
@@ -122,7 +131,7 @@ const Nav = () => {
             <div className="p-6 flex flex-col h-full">
               <div className="flex items-center justify-between mb-6">
                 <a href="/" onClick={closeMobile} className="flex items-center">
-                  <img src={headerLogo.src} alt="Logo" width={56} height={56} />
+                  <img src={logoImage.src} alt="Logo" width={56} height={56} />
                 </a>
                 <button onClick={closeMobile} aria-label="Close menu" className="text-slate-900 dark:text-gray-200">
                   <FontAwesomeIcon icon={faTimes} size="lg" />

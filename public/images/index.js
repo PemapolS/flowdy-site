@@ -1,4 +1,4 @@
-import headerLogo from './header-logo.png'
+import navLogoFlowdy from './nav-logo-flowdy.png'
 import bigPhoto1 from './big-photo1.jpg'
 import aboutPhoto from './about-photo.jpg'
 import thFlag from './th-flag.svg'
@@ -27,9 +27,11 @@ import YC02_001 from './YC02-001.gif'
 import FB02_006 from './FB02-006.png'
 import FB02_004_Banner from './FB02-004_Banner.png'
 import HB00_007 from './HB00-007.png'
+import navLogoHerman from './nav-logo-herman.png'
+import navLogoMarvin from './nav-logo-marvin.png'
 
 export {
-    headerLogo,
+    navLogoFlowdy,
     bigPhoto1,
     aboutPhoto,
     thFlag,
@@ -57,5 +59,7 @@ export {
     YC02_001,
     YC02_002_01,
     FB02_004_Banner,
-    HB00_007
+    HB00_007,
+    navLogoHerman,
+    navLogoMarvin
 };
