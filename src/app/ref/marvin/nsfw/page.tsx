@@ -93,7 +93,7 @@ export default function NsfwPage() {
                   <ul className="mt-3 space-y-2 list-disc list-inside text-gray-700 dark:text-gray-300">
                     <li>Uniforms and formal wear</li>
                     <li>Biting</li>
-                    <li>Vore as predator and prey</li>
+                    <li>Endosoma vore</li>
                     <li>Teasing</li>
                     <li>Size difference</li>
                     <li>Excessive cum</li>
