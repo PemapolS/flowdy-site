@@ -71,6 +71,12 @@ export const events = [
         location: "Spring Hill, QLD",
         date: "17-19 October"
     },
+    {
+        imgURL: flagTH,
+        label: "BangkokBeasts 2025",
+        location: "Bangkok, Thailand",
+        date: "15 November"
+    },    
     // {
     //     imgURL: flagMY,
     //     label: "FURUM 2025",
