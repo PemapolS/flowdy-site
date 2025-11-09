@@ -1,15 +1,19 @@
 const EventCard = ({imgURL, label, date, location}) => {
   return (
-    <div className="flex-1 flex gap-5 sm:min-w-[350px] max-w-[450px] max-h-32 w-full rounded-[20px] shadow-3xl px-6 lg:px-8 py-5 lg:py-7 ring-1 ring-slate-900/5 dark:bg-slate-600 items-center">
-        <div className="min-w-11 min-h-11 flex justify-center items-center rounded-xl bg-gray-400 dark:bg-slate-200 self-center">
-            <img src={imgURL.src} alt={label} width={30} height={30} />
+    <article
+      role="article"
+      className="group flex-1 min-w-[300px] max-w-[450px] w-full rounded-[20px] bg-white/60 dark:bg-slate-800/60 ring-1 ring-slate-900/5 dark:ring-slate-700/20 hover:shadow-lg transition-transform duration-200 ease-out hover:-translate-y-1 px-4 lg:px-6 py-4 lg:py-5 flex items-center gap-4"
+    >
+        <div className="w-12 h-10 flex-shrink-0 rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-700 flex items-center justify-center ring-1 ring-slate-900/5 dark:ring-0">
+            <img src={imgURL.src} alt={label} className="p-1 object-cover" />
         </div>
+
         <div className="font-ibm">
-            <h3 className="text-gray-900 dark:text-white font-bold text-xl lg:text-2xl">{label}</h3>
-            <p className="text-gray-900 dark:text-white hidden lg:block">{location} | {date}</p> 
-            <p className="text-gray-900 dark:text-white block lg:hidden">{location}<br/>{date}</p> 
+            <h3 className="text-gray-900 dark:text-white font-bold text-lg lg:text-xl">{label}</h3>
+            <p className="text-gray-700 dark:text-gray-300 text-sm lg:text-sm">{location}</p>
+            <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">{date}</p>
         </div>
-    </div>
+    </article>
   )
 }
 
