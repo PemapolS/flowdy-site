@@ -167,7 +167,9 @@ const Events = () => {
         <button
           type="button"
           onClick={() => setPastOpen(true)}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/90 dark:bg-slate-800 text-sm font-ibm font-medium ring-1 ring-slate-900/5 dark:ring-0 hover:shadow-lg transition text-gray-900 dark:text-white"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/90 dark:bg-slate-800 text-sm font-ibm font-medium ring-1 ring-slate-900/5 dark:ring-0 text-gray-900 dark:text-white
+                     transition-transform duration-200 ease-out transform hover:-translate-y-1 hover:scale-[1.02] hover:shadow-xl hover:bg-gray-100 dark:hover:bg-slate-700
+                     focus:outline-none focus-visible:ring-2 focus-visible:ring-purple-500 active:scale-95"
         >
           View Past Events
         </button>
@@ -220,7 +222,7 @@ const Events = () => {
                           >
                             <div className="flex items-center gap-3 min-w-0">
                               {ev.imgURL ? (
-                                <div className="w-10 h-10 flex-shrink-0 rounded-md overflow-hidden bg-slate-100 dark:bg-slate-700 ring-1 ring-slate-900/5 dark:ring-0">
+                                <div className="w-12 h-10 flex-shrink-0 rounded-md overflow-hidden bg-slate-100 dark:bg-slate-700 ring-1 ring-slate-900/5 dark:ring-0">
                                   <img src={ev.imgURL.src} alt={ev.label} className="w-full h-full p-1 object-cover" />
                                 </div>
                               ) : (
