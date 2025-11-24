@@ -220,7 +220,7 @@ const Events = () => {
                           >
                             <div className="flex items-center gap-3 min-w-0">
                               {ev.imgURL ? (
-                                <div className="w-12 h-10 flex-shrink-0 rounded-md overflow-hidden bg-slate-100 dark:bg-slate-700 ring-1 ring-slate-900/5 dark:ring-0">
+                                <div className="w-10 h-10 flex-shrink-0 rounded-md overflow-hidden bg-slate-100 dark:bg-slate-700 ring-1 ring-slate-900/5 dark:ring-0">
                                   <img src={ev.imgURL.src} alt={ev.label} className="w-full h-full p-1 object-cover" />
                                 </div>
                               ) : (
@@ -232,11 +232,19 @@ const Events = () => {
                               <div className="min-w-0">
                                 <div className="font-ibm font-medium text-gray-900 dark:text-white truncate">{ev.label}</div>
                                 <div className="font-ibm text-sm text-gray-600 dark:text-gray-300 truncate">{ev.location}</div>
+
+                                {/* show date below location on small screens */}
+                                <div className="font-ibm text-sm text-gray-600 dark:text-gray-300 mt-1 md:hidden">
+                                  <span className="inline-block px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
+                                    {ev.date}
+                                  </span>
+                                </div>
                               </div>
                             </div>
 
+                            {/* keep date badge on medium+ screens */}
                             <div className="ml-3 flex items-center">
-                              <span className="inline-block px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
+                              <span className="hidden md:inline-block px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
                                 {ev.date}
                               </span>
                             </div>
