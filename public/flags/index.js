@@ -2,10 +2,12 @@ import flagMY from './my.png';
 import flagTH from './th.png';
 import flagTW from './tw.png';
 import flagAU from './au.png';
+import flagUK from './uk.png';
 
 export {
     flagMY,
     flagTH,
     flagTW,
-    flagAU
+    flagAU,
+    flagUK
 }
