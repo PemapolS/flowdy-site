@@ -9,6 +9,12 @@ const Socials = () => {
         <h1 className="max-w-screen-md b-4 text-[34px] lg:text-[40px] tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">
         Social Media Accounts
         </h1>
+          <div className="rounded-lg border-l-4 border-yellow-400 bg-yellow-50 dark:bg-yellow-900/20 dark:border-yellow-600 p-3">
+            <p className="font-ibm sm:text-md text-yellow-800 dark:text-yellow-200">
+              <strong className="font-semibold">Note:</strong>{' '}
+              Any convention-related inquiries should be directed through official channels and work accounts.
+            </p>
+          </div>
       </div>
       <div className="max-container lg:grid lg:grid-cols-3 lg:gap-5 py-5 lg:px-10 gap-4 flex-col flex flex-wrap justify-center">
       {/* <div className="max-container flex justify-center flex-wrap gap-4 lg:gap-9 py-4 max-sm:flex-col"> */}
