@@ -60,7 +60,8 @@ export default function SfwPage() {
                 {/* Outdated designs warning */}
                 <div role="status" className="mt-3 mb-4 rounded-md bg-yellow-50 dark:bg-yellow-900/40 border-l-4 border-amber-400 dark:border-amber-300 p-3 text-amber-800 dark:text-amber-100">
                   <p className="text-sm">
-                    Note: The images below may show outdated character design. The reference sheet shown later on this page supersedes any older designs — please refer to it for the current character design.
+                    <strong className="font-semibold">Note:</strong>{' '}
+                    The images below may show outdated character design. The reference sheet shown later on this page supersedes any older designs — please refer to it for the current character design.
                   </p>
                 </div>
                 
