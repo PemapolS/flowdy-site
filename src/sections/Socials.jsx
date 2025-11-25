@@ -10,7 +10,7 @@ const Socials = () => {
         Social Media Accounts
         </h1>
           <div className="rounded-lg border-l-4 border-yellow-400 bg-yellow-50 dark:bg-yellow-900/20 dark:border-yellow-600 p-3">
-            <p className="font-ibm sm:text-md text-yellow-800 dark:text-yellow-200">
+            <p className="font-ibm text-sm text-yellow-800 dark:text-yellow-200">
               <strong className="font-semibold">Note:</strong>{' '}
               Any convention-related inquiries should be directed through official channels and work accounts.
             </p>
