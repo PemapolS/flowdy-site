@@ -67,16 +67,17 @@ const Nav = () => {
 
     return (
 
-    <header className="fixed padding-x py-6 z-50 w-full bg-gradient-to-b from-cyan-600 dark:from-gray-800">
-        <nav className="flex justify-between items-center max-container gap-4">
-            <a href="/" className="flex items-center" aria-label="Home">
-                <img 
+    <header className="fixed padding-x py-4 lg:py-6 z-50 w-full bg-gradient-to-b from-cyan-600 dark:from-gray-800">
+         <nav className="flex justify-between items-center max-container gap-4">
+             <a href="/" className="flex items-center" aria-label="Home">
+                <img
                     src={logoImage.src}
                     alt="Logo"
                     width={80}
                     height={80}
+                    className="w-12 h-12 lg:w-24 lg:h-24"
                 />
-            </a>
+             </a>
             <ul className="flex-1 flex justify-end items-center gap-16 max-lg:hidden">
                 {navLinks.map((item) => (
                     <li key={item.label}>
@@ -130,13 +131,13 @@ const Nav = () => {
           >
             <div className="p-6 flex flex-col h-full">
               <div className="flex items-center justify-between mb-6">
-                <a href="/" onClick={closeMobile} className="flex items-center">
-                  <img src={logoImage.src} alt="Logo" width={56} height={56} />
-                </a>
-                <button onClick={closeMobile} aria-label="Close menu" className="text-slate-900 dark:text-gray-200">
-                  <FontAwesomeIcon icon={faTimes} size="lg" />
-                </button>
-              </div>
+                 <a href="/" onClick={closeMobile} className="flex items-center">
+                  <img src={logoImage.src} alt="Logo" width={56} height={56} className="w-12 h-12 lg:w-16 lg:h-16" />
+                 </a>
+                 <button onClick={closeMobile} aria-label="Close menu" className="text-slate-900 dark:text-gray-200">
+                   <FontAwesomeIcon icon={faTimes} size="lg" />
+                 </button>
+               </div>
 
               <nav className="flex flex-col gap-4">
                 {navLinks.map((item) => (
