@@ -35,7 +35,7 @@ export default {
         '3xl': '0 10px 40px rgba(0, 0, 0, 0.1)'
       },
       backgroundImage: {
-        'hero': "url('../public/images/big-photo2.jpg')",
+        'hero': "url('../public/images/Hero-Christmas.jpg')",
         'header-ref': "url('../public/images/HB00-009.png')",
         'header-ref-flowdy': "url('../public/images/Header-RefFlowdy.jpg')",
         'header-ref-marvin': "url('../public/images/FB02-004_Banner.png')",
