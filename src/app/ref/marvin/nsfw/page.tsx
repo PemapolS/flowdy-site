@@ -1,6 +1,10 @@
 import { RefMarvinSFW, YC02_002_01 } from "../../../../../public/images";
 
 export default function NsfwPage() {
+    // container for image + credit background / ring (applies to whole box including image)
+    const boxClass = "w-full max-w-xl rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
+    const captionClass = "p-2 text-sm text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center";
+
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
             {/* NSFW banner */}
@@ -116,18 +120,19 @@ export default function NsfwPage() {
                     Reference Sheet
                 </h3>
                 <div className="flex flex-col items-center gap-4">
-                    <img
+                    <figure className={boxClass}>
+                      <img
                         src={RefMarvinSFW.src}
                         alt="Marvin Reference Sheet"
-                        width={500}
-                        className="rounded-lg"
-                    />
-                    <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                        className="w-full h-auto object-cover"
+                      />
+                      <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
                           Kota (TrashMutt)
                         </a>
-                    </p>
+                      </figcaption>
+                    </figure>
                 </div>
 
                 {/* Outdated designs warning */}
@@ -138,19 +143,20 @@ export default function NsfwPage() {
                   </p>
                 </div>
 
-                <div className="pt-2 flex flex-col items-center gap-4">
-                    <img
+                <div className="flex flex-col items-center gap-4">
+                    <figure className={`max-w-md ${boxClass}`}>
+                      <img
                         src={YC02_002_01.src}
-                        alt="YC02-002-01"
-                        width={300}
-                        className="rounded-lg"
-                    />
-                    <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                        alt="Marvin artwork"
+                        className="w-full h-auto object-cover"
+                      />
+                      <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
                           Kota (TrashMutt)
                         </a>
-                    </p>
+                      </figcaption>
+                    </figure>
                 </div>
             </div>
             

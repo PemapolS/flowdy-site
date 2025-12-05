@@ -1,6 +1,11 @@
-import { RefFlowdySFW, FursuitFlowdy, FB01_014, HB01_006BG1, HB01_007, HB01_011, Airport_ID } from "../../../../../public/images";
+import { RefFlowdySFW, FursuitFlowdy, FB01_014, HB01_006BG1, HB01_007, HB01_011, Airport_ID, FI01_002 } from "../../../../../public/images";
 
 export default function SfwPage() {
+    // container for image + credit background / ring
+    const boxClass = "rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
+    // figcaption styling (no background — background applied to the whole box)
+    const captionClass = "p-2 text-sm text-gray-600 dark:text-gray-300 font-ibm text-center";
+
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
             {/* Top area: description + single image aside that sits beside the character bio too */}
@@ -57,10 +62,11 @@ export default function SfwPage() {
 
               {/* Single aside image that visually sits beside both the description and the bio */}
               <aside className="md:col-span-1">
-                <figure className="sticky top-20 w-full max-w-[280px] rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm">
+                <figure className={`sticky top-20 w-full max-w-[280px] ${boxClass}`}>
                   <img src={Airport_ID.src} alt="Flowdy reference sheet" className="w-full h-auto object-cover" />
-                  <figcaption className="p-2 text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
-                    Employee ID | Art by {' '}<a className="hover:text-purple-600 dark:hover:text-purple-300" href="https://betsuto.carrd.co/" target="_blank" rel="noreferrer">Betsuto</a>
+                  <figcaption className={captionClass}>
+                    Employee ID | Art by{' '}
+                    <a className="hover:text-purple-600 dark:hover:text-purple-300" href="https://betsuto.carrd.co/" target="_blank" rel="noreferrer">Betsuto</a>
                   </figcaption>
                 </figure>
               </aside>
@@ -72,66 +78,83 @@ export default function SfwPage() {
                     Clothing Style
                 </h3>
                 <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">
-                    During his day-to-day work as an airport ground crew, Flowdy typically wears a standard uniform which consists of a high-visibility vest over a blue t-shirt, dark cargo pants, and hearing protection earmuffs. For casual occasions, he prefers comfortable outfits such as hoodies of the same blue color or simple t-shirts paired with long pants or shorts. He can also go without any clothing at all depending on the setting.
+                    During his day-to-day work as an airport ground crew, Flowdy typically wears a standard uniform which consists of a high-visibility vest over a blue t-shirt, dark cargo pants, and hearing protection earmuffs. He also wears high-visibility rain jack during wet weather. For casual occasions, he prefers comfortable outfits such as hoodies of the same blue color or simple t-shirts paired with long pants or shorts. He can also go without any clothing at all depending on the setting.
                 </p>
                 <div className="mt-4">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
-                    <div className="flex flex-col items-center gap-4">
+                  {/* Featured larger image above the grid */}
+                  <div className="mb-6 flex justify-center">
+                    <figure className={`w-full max-w-3xl ${boxClass}`}>
                       <img
-                        src={FB01_014.src}
-                        alt="FB01-014"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-lg"
+                        src={FI01_002.src}
+                        alt="FI01-002"
+                        className="w-full h-auto object-cover"
                       />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                      <figcaption className={captionClass}>
                         Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://linktr.ee/merridoodles">
-                          Merridoodles
+                        <a className="hover:text-purple-600 dark:hover:text-purple-300" href="https://betsuto.carrd.co/" target="_blank" rel="noreferrer">
+                          Betsuto
                         </a>
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col items-center gap-4">
-                      <img
-                        src={HB01_007.src}
-                        alt="HB01-007"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover object-top rounded-lg"
-                      />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
-                        Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/">
-                          Kodapop
-                        </a>
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col items-center gap-4">
-                      <img
-                        src={HB01_006BG1.src}
-                        alt="HB01_006BG1"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-lg"
-                      />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
-                        Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/">
-                          Kodapop
-                        </a>
-                      </p>
-                    </div>
-
-                    <div className="flex flex-col items-center gap-4">
-                      <img
-                        src={HB01_011.src}
-                        alt="HB01-011"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-lg"
-                      />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
-                        Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/">
-                          Kota (TrashMutt)
-                        </a>
-                      </p>
-                    </div>
+                      </figcaption>
+                    </figure>
                   </div>
+                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
+                     {/* gallery items: keep square aspect ratio on all breakpoints */}
+                     <figure className={`w-full rounded-lg overflow-hidden ${boxClass}`}>
+                       <img
+                         src={FB01_014.src}
+                         alt="FB01-014"
+                         className="w-full aspect-square object-cover rounded-lg"
+                       />
+                       <figcaption className={captionClass}>
+                         Art by{' '}
+                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://linktr.ee/merridoodles" target="_blank" rel="noreferrer">
+                           Merridoodles
+                         </a>
+                       </figcaption>
+                     </figure>
+
+                     <figure className={`w-full rounded-lg overflow-hidden ${boxClass}`}>
+                       <img
+                         src={HB01_007.src}
+                         alt="HB01-007"
+                         className="w-full aspect-square object-cover object-top rounded-lg"
+                       />
+                       <figcaption className={captionClass}>
+                         Art by{' '}
+                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/" target="_blank" rel="noreferrer">
+                           Kodapop
+                         </a>
+                       </figcaption>
+                     </figure>
+
+                     <figure className={`w-full rounded-lg overflow-hidden ${boxClass}`}>
+                       <img
+                         src={HB01_006BG1.src}
+                         alt="HB01_006BG1"
+                         className="w-full aspect-square object-cover rounded-lg"
+                       />
+                       <figcaption className={captionClass}>
+                         Art by{' '}
+                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/" target="_blank" rel="noreferrer">
+                           Kodapop
+                         </a>
+                       </figcaption>
+                     </figure>
+
+                     <figure className={`w-full rounded-lg overflow-hidden ${boxClass}`}>
+                       <img
+                         src={HB01_011.src}
+                         alt="HB01-011"
+                         className="w-full aspect-square object-cover rounded-lg"
+                       />
+                       <figcaption className={captionClass}>
+                         Art by{' '}
+                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
+                           Kota (TrashMutt)
+                         </a>
+                       </figcaption>
+                     </figure>
+                   </div>
                 </div>
             </div>
 
@@ -164,50 +187,39 @@ export default function SfwPage() {
               </div>
             </section>
 
-            <section aria-labelledby="design-notes" className="w-full">
-              <h3 id="design-notes" className="mt-6 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
-                Design Notes and Common Mistakes
-              </h3>
-              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 font-ibm">
-                <li>His nose color is different from his paw and outer ear color.</li>
-                <li>The line marking runs from his mouth and ends on his tail.</li>
-                <li>The four droplet markings on his back run vertically down his back and tail in a straight line.</li>
-                <li>There are two droplets on his back and two on his tail.</li>
-              </ul>
-            </section>
-
             <div className="">
                 <h3 className="mt-4 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
                     Reference Sheet
                 </h3>
                 <div className="flex flex-col items-center gap-4">
-                    <img
+                    <figure className={`w-full max-w-xl ${boxClass}`}>
+                      <img
                         src={RefFlowdySFW.src}
                         alt="Flowdy Reference Sheet"
-                        width={500}
-                        className="rounded-lg"
-                    />
-                    <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                        className="w-full h-auto object-cover"
+                      />
+                      <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
                           Kota (TrashMutt)
                         </a>
-                    </p>
-                </div>
-            </div>
+                      </figcaption>
+                    </figure>
+                 </div>
+             </div>
             
             <div className="">
                 <h3 className="mt-4 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
                     Fursuit
                 </h3>
                 <div className="flex flex-col items-center gap-4">
-                    <img
+                    <figure className={`w-full max-w-md ${boxClass}`}>
+                      <img
                         src={FursuitFlowdy.src}
                         alt="Flowdy Fursuit"
-                        width={400}
-                        className="rounded-lg"
-                    />
-                    <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                        className="w-full h-auto object-cover"
+                      />
+                      <figcaption className={captionClass}>
                         Fursuit by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://www.furaffinity.net/user/LazyLupe" target="_blank" rel="noreferrer">
                           LupeSuits
@@ -216,9 +228,10 @@ export default function SfwPage() {
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://ryuuwolf.gay" target="_blank" rel="noreferrer">
                           Ryuu
                         </a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    );
-}
+                      </figcaption>
+                    </figure>
+                 </div>
+             </div>
+         </div>
+     );
+ }

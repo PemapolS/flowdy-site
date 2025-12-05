@@ -1,6 +1,10 @@
 import { RefFlowdyNSFW } from "../../../../../public/images";
 
 export default function NsfwPage() {
+    // container for image + credit background / ring
+    const boxClass = "w-full max-w-xl rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
+    const captionClass = "p-2 text-sm text-gray-500 dark:text-gray-400 font-ibm text-center";
+
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
             {/* NSFW banner */}
@@ -115,19 +119,20 @@ export default function NsfwPage() {
                 <h3 className="mt-4 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
                     Reference Sheet
                 </h3>
-                <div className="flex flex-col items-center gap-4">
-                    <img
+                  <div className="flex flex-col items-center gap-4">
+                    <figure className={boxClass}>
+                      <img
                         src={RefFlowdyNSFW.src}
                         alt="Flowdy Reference Sheet"
-                        width={500}
-                        className="rounded-lg"
-                    />
-                    <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                        className="w-full h-auto object-cover"
+                      />
+                      <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
                           Kota (TrashMutt)
                         </a>
-                    </p>
+                      </figcaption>
+                    </figure>
                 </div>
             </div>
             

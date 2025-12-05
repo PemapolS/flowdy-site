@@ -24,14 +24,14 @@ const About = () => {
             Thanks for sticking around!
           </p>
         </div>
-        <div className="w-full flex flex-col items-center">
+        <div className="w-full max-w-3xl rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm">
           <img
             src={aboutPhoto.src}
             alt="About photo"
             className="w-full max-w-[500px] h-auto rounded-lg object-cover"
             loading="lazy"
           />
-          <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center mt-2">
+          <p className="p-2 text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
             Photo by{' '}
             <a
               className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors"

@@ -1,6 +1,10 @@
 import { RefMarvinSFW, HB00_005, HB00_007, YC02_001, FB02_006 } from "../../../../../public/images";
 
 export default function SfwPage() {
+    // container for image + credit background / ring (applies to whole box including image)
+    const boxClass = "w-full max-w-xl rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
+    const captionClass = "p-2 text-sm text-gray-500 dark:text-gray-400 font-ibm text-center";
+
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
             <h2 className=" text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Marvin the Sika Deer</h2>
@@ -67,63 +71,63 @@ export default function SfwPage() {
                 
                 <div className="mt-4">
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 items-start">
-                    <div className="flex flex-col items-center gap-4">
+                    <figure className={boxClass}>
                       <img
                         src={HB00_005.src}
                         alt="HB00-005"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover object-top rounded-lg"
+                        className="w-full aspect-square object-cover object-top"
                       />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                      <figcaption className={captionClass}>
                         Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/">
+                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/" target="_blank" rel="noreferrer">
                           Kodapop
                         </a>
-                      </p>
-                    </div>
+                      </figcaption>
+                    </figure>
 
-                    <div className="flex flex-col items-center gap-4">
+                    <figure className={boxClass}>
                       <img
                         src={HB00_007.src}
                         alt="HB00-007"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-lg"
+                        className="w-full aspect-square object-cover"
                       />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                      <figcaption className={captionClass}>
                         Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="http://pupsonar.carrd.co/">
+                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="http://pupsonar.carrd.co/" target="_blank" rel="noreferrer">
                           PupSonar
                         </a>
-                      </p>
-                    </div>
+                      </figcaption>
+                    </figure>
 
-                    <div className="flex flex-col items-center gap-4">
+                    <figure className={boxClass}>
                       <img
                         src={YC02_001.src}
                         alt="YC02-001"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover rounded-lg"
+                        className="w-full aspect-square object-cover"
                       />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                      <figcaption className={captionClass}>
                         Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://bsky.app/profile/marleemutt.bsky.social">
+                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://bsky.app/profile/marleemutt.bsky.social" target="_blank" rel="noreferrer">
                           Marleemutt
                         </a>
-                      </p>
-                    </div>
+                      </figcaption>
+                    </figure>
 
-                    <div className="flex flex-col items-center gap-4">
+                    <figure className={boxClass}>
                       <img
                         src={FB02_006.src}
                         alt="FB02-006"
-                        className="w-40 h-40 lg:w-56 lg:h-56 object-cover object-top rounded-lg"
+                        className="w-full aspect-square object-cover object-top"
                       />
-                      <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                      <figcaption className={captionClass}>
                         Art by{' '}
-                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/">
+                        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/" target="_blank" rel="noreferrer">
                           Kodapop
                         </a>
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                      </figcaption>
+                    </figure>
+                   </div>
+                 </div>
             </div>
 
             <section aria-labelledby="likes-dislikes" className="w-full">
@@ -158,20 +162,21 @@ export default function SfwPage() {
                     Reference Sheet
                 </h3>
                 <div className="flex flex-col items-center gap-4">
-                    <img
+                    <figure className={boxClass}>
+                      <img
                         src={RefMarvinSFW.src}
                         alt="Marvin Reference Sheet"
-                        width={500}
-                        className="rounded-lg"
-                    />
-                    <p className="text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                        className="w-full h-auto object-cover"
+                      />
+                      <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
                           Kota (TrashMutt)
                         </a>
-                    </p>
-                </div>
-            </div>
+                      </figcaption>
+                    </figure>
+                 </div>
+             </div>
             
         </div>
     );
