@@ -1,54 +1,72 @@
-import { RefFlowdySFW, FursuitFlowdy, FB01_014, HB01_006BG1, HB01_007, HB01_011 } from "../../../../../public/images";
+import { RefFlowdySFW, FursuitFlowdy, FB01_014, HB01_006BG1, HB01_007, HB01_011, Airport_ID } from "../../../../../public/images";
 
 export default function SfwPage() {
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
-            <h2 className=" text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Flowdy the Husky</h2>
-            <h2 className="text-2xl tracking-tight font-medium text-gray-700 dark:text-gray-300 font-ibm">Flowdy Martin</h2>
-            <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">Flowdy is a friendly purple husky from Bangkok, Thailand. He works as an airport ground crew, specifically as an aircraft marshaller. He loves the cold and rain. Wanting to do everything by the book, he is a stickler for rules and regulations.</p>
-            
-            {/* Character bio table */}
-            <section aria-labelledby="character-bio" className="w-full">
-              <h3 id="character-bio" className="mt-4 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">Character Bio</h3>
+            {/* Top area: description + single image aside that sits beside the character bio too */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
+              <div className="md:col-span-2">
+                <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Flowdy the Husky</h2>
+                <h2 className="text-2xl tracking-tight font-medium text-gray-700 dark:text-gray-300 font-ibm">Flowdy Martin</h2>
+                <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm mt-3">
+                  Flowdy is a friendly purple husky from Bangkok, Thailand. He works as an airport ground crew, specifically as an aircraft marshaller. He loves the cold and rain. Wanting to do everything by the book, he is a stickler for rules and regulations.
+                </p>
 
-              <div className="overflow-x-auto">
-                <table className="min-w-full max-w-2xl w-full table-fixed bg-transparent">
-                  <colgroup>
-                    <col className="w-40" />
-                    <col />
-                  </colgroup>
+                {/* Character bio table (stays in same left column) */}
+                <section aria-labelledby="character-bio" className="w-full mt-6">
+                  <h3 id="character-bio" className="mt-0 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">Character Bio</h3>
 
-                  <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
-                    
-                    <tr>
-                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Species</th>
-                      <td className="py-2 text-sm text-gray-900 dark:text-white">Dog (Husky)</td>
-                    </tr>
+                  <div className="overflow-x-auto">
+                    <table className="min-w-full max-w-2xl w-full table-fixed bg-transparent">
+                      <colgroup>
+                        <col className="w-40" />
+                        <col />
+                      </colgroup>
 
-                    <tr>
-                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Gender</th>
-                      <td className="py-2 text-sm text-gray-900 dark:text-white">Male (He/Him)</td>
-                    </tr>
+                      <tbody className="divide-y divide-gray-200 dark:divide-gray-700">
+                        
+                        <tr>
+                          <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Species</th>
+                          <td className="py-2 text-sm text-gray-900 dark:text-white">Dog (Husky)</td>
+                        </tr>
 
-                    <tr>
-                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Birthdate</th>
-                      <td className="py-2 text-sm text-gray-900 dark:text-white">8th November</td>
-                    </tr>
+                        <tr>
+                          <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Gender</th>
+                          <td className="py-2 text-sm text-gray-900 dark:text-white">Male (He/Him)</td>
+                        </tr>
 
-                    <tr>
-                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Height</th>
-                      <td className="py-2 text-sm text-gray-900 dark:text-white">175 cm / 5'9"</td>
-                    </tr>
+                        <tr>
+                          <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Birthdate</th>
+                          <td className="py-2 text-sm text-gray-900 dark:text-white">8th November</td>
+                        </tr>
 
-                    <tr>
-                      <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Aliases</th>
-                      <td className="py-2 text-sm text-gray-900 dark:text-white">"Flower", "Flowerdy", "Flowder", "Flo", "Flowds"</td>
-                    </tr>
-                  </tbody>
-                </table>
+                        <tr>
+                          <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Height</th>
+                          <td className="py-2 text-sm text-gray-900 dark:text-white">175 cm / 5'9"</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row" className="text-left py-2 pr-4 text-sm font-medium text-gray-600 dark:text-gray-300">Aliases</th>
+                          <td className="py-2 text-sm text-gray-900 dark:text-white">"Flower", "Flowerdy", "Flowder", "Flo", "Flowds"</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
               </div>
-            </section>
-            
+
+              {/* Single aside image that visually sits beside both the description and the bio */}
+              <aside className="md:col-span-1">
+                <figure className="sticky top-20 w-full max-w-[280px] rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm">
+                  <img src={Airport_ID.src} alt="Flowdy reference sheet" className="w-full h-auto object-cover" />
+                  <figcaption className="p-2 text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+                    Employee ID | Art by {' '}<a className="hover:text-purple-600 dark:hover:text-purple-300" href="https://betsuto.carrd.co/" target="_blank" rel="noreferrer">Betsuto</a>
+                  </figcaption>
+                </figure>
+              </aside>
+            </div>
+
+            {/* Rest of page content (clothing, gallery, likes/dislikes, design notes, etc.) */}
             <div>
                 <h3 className="mt-4 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
                     Clothing Style
@@ -117,8 +135,7 @@ export default function SfwPage() {
                 </div>
             </div>
 
-            
-                        {/* Likes / Dislikes side-by-side */}
+            {/* Likes / Dislikes side-by-side */}
             <section aria-labelledby="likes-dislikes" className="w-full">
               <h3 id="likes-dislikes" className="sr-only">Likes and Dislikes</h3>
 
