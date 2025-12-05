@@ -13,6 +13,9 @@ const Socials = () => {
             <p className="font-ibm text-sm text-yellow-800 dark:text-yellow-200">
               <strong className="font-semibold">Note:</strong>{' '}
               Any convention-related inquiries should be directed through official channels and work accounts.
+              <br />
+              <strong className="font-semibold">หมายเหตุ:</strong>{' '}
+              การสอบถามข้อมูลที่เกี่ยวข้องกับงานอีเวนต์ต่าง ๆ ควรติดต่อผ่านช่องทางและบัญชีทางการเท่านั้น
             </p>
           </div>
       </div>
