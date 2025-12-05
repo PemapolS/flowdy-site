@@ -80,7 +80,7 @@ export default function SfwPage() {
                     Clothing Style
                 </h3>
                 <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">
-                    During his day-to-day work as an airport ground crew, Flowdy typically wears a standard uniform which consists of a high-visibility vest over a blue t-shirt, dark cargo pants, and hearing protection earmuffs. He also wears high-visibility rain jack during wet weather. For casual occasions, he prefers comfortable outfits such as hoodies of the same blue color or simple t-shirts paired with long pants or shorts. He can also go without any clothing at all depending on the setting.
+                    During his day-to-day work as an airport ground crew, Flowdy typically wears a standard uniform which consists of a high-visibility vest over a blue t-shirt, dark cargo pants, and hearing protection earmuffs. He also wears a high-visibility rain jacket during wet weather. For casual occasions, he prefers comfortable outfits such as hoodies of the same blue color or simple t-shirts paired with long pants or shorts. He can also go without any clothing at all depending on the setting.
                 </p>
                 <div className="mt-4">
                   {/* Featured larger image above the grid */}
