@@ -189,6 +189,18 @@ export default function SfwPage() {
               </div>
             </section>
 
+            <section aria-labelledby="design-notes" className="w-full">
+              <h3 id="design-notes" className="mt-6 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
+                Design Notes and Common Mistakes
+              </h3>
+              <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2 font-ibm">
+                <li>His nose color is different from his paw and outer ear color.</li>
+                <li>The line marking runs from his mouth and ends on his tail.</li>
+                <li>The four droplet markings on his back run vertically down his back and tail in a straight line.</li>
+                <li>There are two droplets on his back and two on his tail.</li>
+              </ul>
+            </section>
+
             <div className="">
                 <h3 className="mt-4 mb-2 text-2xl font-semibold text-gray-900 dark:text-white font-ibm">
                     Reference Sheet
