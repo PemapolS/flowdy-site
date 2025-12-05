@@ -2,7 +2,7 @@ import { RefMarvinSFW, YC02_002_01 } from "../../../../../public/images";
 
 export default function NsfwPage() {
     // container for image + credit background / ring (applies to whole box including image)
-    const boxClass = "w-full max-w-xl rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
+    const boxClass = "rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
     const captionClass = "p-2 text-sm text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center";
 
     return (
@@ -120,7 +120,7 @@ export default function NsfwPage() {
                     Reference Sheet
                 </h3>
                 <div className="flex flex-col items-center gap-4">
-                    <figure className={boxClass}>
+                    <figure className={`w-full max-w-xl ${boxClass}`}>
                       <img
                         src={RefMarvinSFW.src}
                         alt="Marvin Reference Sheet"
@@ -144,10 +144,10 @@ export default function NsfwPage() {
                 </div>
 
                 <div className="flex flex-col items-center gap-4">
-                    <figure className={`max-w-md ${boxClass}`}>
+                    <figure className={`w-full max-w-md ${boxClass}`}>
                       <img
                         src={YC02_002_01.src}
-                        alt="Marvin artwork"
+                        alt="YC02-002-01"
                         className="w-full h-auto object-cover"
                       />
                       <figcaption className={captionClass}>
