@@ -7,7 +7,7 @@ export default function SfwPage() {
 
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
-            <h2 className=" text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Marvin the Sika Deer</h2>
+            <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Marvin the Sika Deer</h2>
             <h2 className="text-2xl tracking-tight font-medium text-gray-700 dark:text-gray-300 font-ibm">Marthew "Marvin" Dearmond</h2>
             <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">Marvin is a sika deer with a love for adventure and thrills. He is confident and expressive about his feelings. Professionally, he works as an aerospace engineer for a government space agency. On occasions, he also works as an astronaut. In an alternate universe where the world works a little differently, he is a magical deer wizard with the power of flight.</p>
             

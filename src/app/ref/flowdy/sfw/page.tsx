@@ -8,14 +8,16 @@ export default function SfwPage() {
 
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
-            {/* Top area: description + single image aside that sits beside the character bio too */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-start">
               <div className="md:col-span-2">
-                <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Flowdy the Husky</h2>
-                <h2 className="text-2xl tracking-tight font-medium text-gray-700 dark:text-gray-300 font-ibm">Flowdy Martin</h2>
-                <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm mt-3">
-                  Flowdy is a friendly purple husky from Bangkok, Thailand. He works as an airport ground crew, specifically as an aircraft marshaller. He loves the cold and rain. Wanting to do everything by the book, he is a stickler for rules and regulations.
-                </p>
+                <div className="flex flex-col gap-4">
+                    <h2 className="text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">Flowdy the Husky</h2>
+                  <h2 className="text-2xl tracking-tight font-medium text-gray-700 dark:text-gray-300 font-ibm">Flowdy Martin</h2>
+                  <p className="text-gray-700 sm:text-md dark:text-gray-300 font-ibm">
+                    Flowdy is a friendly purple husky from Bangkok, Thailand. He works as an airport ground crew, specifically as an aircraft marshaller. He loves the cold and rain. Wanting to do everything by the book, he is a stickler for rules and regulations.
+                  </p>
+                </div>
+                
 
                 {/* Character bio table (stays in same left column) */}
                 <section aria-labelledby="character-bio" className="w-full mt-6">
