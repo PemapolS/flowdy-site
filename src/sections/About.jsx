@@ -31,7 +31,7 @@ const About = () => {
             className="w-full max-w-[500px] h-auto rounded-lg object-cover"
             loading="lazy"
           />
-          <p className="p-2 text-gray-500 sm:text-sm dark:text-gray-400 font-ibm text-center">
+          <p className="p-2 text-sm text-gray-500 dark:text-gray-400 font-ibm text-center">
             Photo by{' '}
             <a
               className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors"
