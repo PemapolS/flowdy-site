@@ -9,7 +9,7 @@ const About = () => {
             Introduction
           </h2>
           <p className="mb-6 text-gray-700 sm:text-md dark:text-gray-300">
-            Hi, I am Flowdy! I am an Information and Communication Engineering student from Thailand. I also have minor interests in interaction design, systems engineering, and photography. I also help out with some of the local cons. I love traveling and meeting new people. Although, I can be a little shy so please be patient with me. I am also a{' '}
+            Hi, I am Flowdy! I am an Information and Communication Engineering student from Thailand. Besides that, I have minor interests in interaction design, systems engineering, and photography. I also help out with some of the local cons. I love traveling and meeting new people. Although, I can be a little shy so please be patient with me. I am also a{' '}
             <a
               href="https://www.furaffinity.net/user/LazyLupe"
               target="_blank"
