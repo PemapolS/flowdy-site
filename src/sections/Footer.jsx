@@ -71,9 +71,9 @@ const Footer = () => {
         <span className="">Icon Art by Pastaiils</span>
         <br className="block lg:hidden" />
         <span className="hidden lg:inline px-1">|</span>
-        Banner Photo by{' '}
-        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://x.com/linkkunghusky" target="_blank" rel="noreferrer">
-          Link
+        Banner Art by{' '}
+        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://betsuto.carrd.co/" target="_blank" rel="noreferrer">
+          Betsuto
         </a>
         {/* {', '}
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://x.com/Ryusuke6351" target="_blank" rel="noreferrer">
