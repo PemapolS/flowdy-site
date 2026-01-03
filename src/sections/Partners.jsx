@@ -18,7 +18,7 @@ const Partners = () => {
               className="rounded-full object-cover w-28 h-28 self-center transition-transform duration-200 group-hover:scale-105"
             />
             <h3 className="justify-center font-montserrat font-semibold self-center pt-5 text-xl text-gray-900 dark:text-white transition-colors duration-200 group-hover:text-purple-600 dark:group-hover:text-purple-300">
-              BlueJay
+              Fez
             </h3>
           </div>
         </a>
@@ -40,7 +40,7 @@ const Partners = () => {
               className="rounded-full object-cover w-28 h-28 self-center transition-transform duration-200 group-hover:scale-105"
             />
             <h3 className="justify-center font-montserrat font-semibold self-center pt-5 text-xl text-gray-900 dark:text-white transition-colors duration-200 group-hover:text-purple-600 dark:group-hover:text-purple-300">
-              Fez
+              BlueJay
             </h3>
           </div>
         </a>
