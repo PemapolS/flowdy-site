@@ -31,6 +31,7 @@ import navLogoHerman from './nav-logo-herman.png'
 import navLogoMarvin from './nav-logo-marvin.png'
 import Airport_ID from './Airport-ID.png'
 import FI01_002 from './FI01-002.png'
+import FI01_002_webp from './FI01-002.webp'
 
 export {
     navLogoFlowdy,
@@ -65,5 +66,6 @@ export {
     navLogoHerman,
     navLogoMarvin,
     Airport_ID,
-    FI01_002
+    FI01_002,
+    FI01_002_webp
 };
