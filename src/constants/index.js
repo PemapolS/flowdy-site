@@ -1,6 +1,6 @@
 import { flagTH, flagMY, flagTW, flagAU, flagUK } from "../../public/flags";
 import { faTwitter, faFacebook, faTelegram, faBluesky, faTumblr, faSteam, faSpotify } from '@fortawesome/free-brands-svg-icons'
-import { faHouse, faPaw } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faPaw, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 
 export const navLinks = [
     // { href: "#home", label: "Home" },
@@ -214,14 +214,14 @@ export const socials = [
         href: "https://www.furaffinity.net/user/flowdy/"
     },
     {
+        imgURL: faCommentDots,
+        label: "VRChat",
+        href: "https://vrchat.com/home/user/usr_be0bd602-99fe-4961-8db3-4ac6781c8d25"
+    },
+    {
         imgURL: faHouse,
         label: "Toyhouse",
         href: "https://toyhou.se/Flowdy"
-    },
-    {
-        imgURL: faTumblr,
-        label: "Tumblr",
-        href: "https://flowdyhusky.tumblr.com/"
     },
     {
         imgURL: faSteam,
@@ -232,5 +232,10 @@ export const socials = [
         imgURL: faSpotify,
         label: "Spotify",
         href: "https://open.spotify.com/user/pemapolmc"
+    },
+    {
+        imgURL: faTumblr,
+        label: "Tumblr",
+        href: "https://flowdyhusky.tumblr.com/"
     }
 ]
