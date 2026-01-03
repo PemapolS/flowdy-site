@@ -19,7 +19,7 @@ const App = () => (
     <section className="max-w-6xl mx-auto px-6">
       <Socials />
     </section>
-    <section className="padding-x py-8 bg-sky-500/30">
+    <section className="bg-sky-500/30">
       <Partners />
     </section>
     <section className="padding-x py-2 bg-gray-900 dark:bg-gray-950">

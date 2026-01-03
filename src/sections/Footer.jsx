@@ -75,10 +75,10 @@ const Footer = () => {
         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://betsuto.carrd.co/" target="_blank" rel="noreferrer">
           Betsuto
         </a>
-        {/* {', '}
-        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://x.com/Ryusuke6351" target="_blank" rel="noreferrer">
-          Ryusuke
-        </a> */}
+        {', '}
+        <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://sirburnt.carrd.co/" target="_blank" rel="noreferrer">
+          Sir Burnt
+        </a>
       </span>
     ),
   };
