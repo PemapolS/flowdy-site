@@ -5,7 +5,7 @@ const About = () => {
     <section id="about" className="font-ibm">
       <div className="flex py-12 mx-auto max-w-screen-xl xl:py-8 lg:px-6 gap-6 items-center flex-col lg:flex-row">
         <div className="max-w-screen-md">
-          <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+          <h2 className="mb-2 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">
             Introduction
           </h2>
           <p className="mb-6 text-gray-700 sm:text-md dark:text-gray-300">

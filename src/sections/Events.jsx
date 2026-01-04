@@ -148,12 +148,12 @@ const Events = () => {
   }, [pastOpen]);
 
   return (
-    <section id="events" className="py-2 mx-auto max-w-screen-xl lg:px-6 gap-4 items-center">
-      <h1 className="max-w-screen-md b-4 text-[34px] lg:text-[40px] tracking-tight font-extrabold text-gray-900 dark:text-white font-ibm">
+    <section id="events" className="py-2 mx-auto max-w-screen-xl lg:px-6 gap-4 items-center font-ibm">
+      <h1 className="mb-2 text-3xl tracking-tight font-extrabold text-gray-900 dark:text-white">
         Upcoming Events Plan
       </h1>
 
-      <div className="max-container flex justify-center flex-wrap gap-5 lg:gap-9 py-4">
+      <div className="max-container flex justify-center flex-wrap gap-5">
         {upcomingEvents.length > 0 ? (
           upcomingEvents.map((event) => (
             <EventCard key={event.label} {...event}/>
