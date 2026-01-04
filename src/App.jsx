@@ -8,15 +8,15 @@ const App = () => (
       <Hero />
     </section>
 
-    <section className="max-w-6xl mx-auto px-2 sm:px-6">
+    <section className="max-w-6xl mx-auto px-8">
       <About />
     </section>
 
-    <section className="max-w-6xl mx-auto px-2 sm:px-6">
+    <section className="max-w-6xl mx-auto px-8">
       <Events />
     </section>
 
-    <section className="max-w-6xl mx-auto px-2 sm:px-6">
+    <section className="max-w-6xl mx-auto px-2 sm:px-8">
       <Socials />
     </section>
     <section className="bg-sky-500/30">
