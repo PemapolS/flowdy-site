@@ -207,11 +207,13 @@ export default function SfwPage() {
                 </h3>
                 <div className="flex flex-col items-center gap-4">
                     <figure className={`w-full max-w-xl ${boxClass}`}>
-                      <img
-                        src={RefFlowdySFW.src}
-                        alt="Flowdy Reference Sheet"
-                        className="w-full h-auto object-cover"
-                      />
+                      <a href={RefFlowdySFW.src} target="_blank" rel="noreferrer" className="block">
+                        <img
+                          src={RefFlowdySFW.src}
+                          alt="Flowdy Reference Sheet"
+                          className="w-full h-auto object-cover cursor-pointer"
+                        />
+                      </a>
                       <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">

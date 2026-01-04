@@ -129,11 +129,13 @@ export default function SfwPage() {
                 </h3>
                 <div className="flex flex-col items-center gap-4">
                     <figure className={`w-full max-w-xl ${boxClass}`}>
+                      <a href={RefHermanSFW.src} target="_blank" rel="noreferrer" className="block">
                       <img
                         src={RefHermanSFW.src}
                         alt="Herman Reference Sheet"
-                        className="w-full h-auto object-cover"
+                        className="w-full h-auto object-cover cursor-pointer"
                       />
+                      </a>
                       <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://wwoofington.carrd.co/" target="_blank" rel="noreferrer">

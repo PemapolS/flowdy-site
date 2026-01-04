@@ -121,11 +121,13 @@ export default function NsfwPage() {
                 </h3>
                   <div className="flex flex-col items-center gap-4">
                     <figure className={boxClass}>
-                      <img
-                        src={RefFlowdyNSFW.src}
-                        alt="Flowdy Reference Sheet"
-                        className="w-full h-auto object-cover"
-                      />
+                      <a href={RefFlowdyNSFW.src} target="_blank" rel="noreferrer" className="block">
+                        <img
+                          src={RefFlowdyNSFW.src}
+                          alt="Flowdy Reference Sheet"
+                          className="w-full h-auto object-cover cursor-pointer"
+                        />
+                      </a>
                       <figcaption className={captionClass}>
                         Art by{' '}
                         <a className="hover:text-purple-600 dark:hover:text-purple-300 transition-colors" href="https://trashmutt.com/" target="_blank" rel="noreferrer">
