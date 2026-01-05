@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faClipboardUser } from '@fortawesome/free-solid-svg-icons';
+import { faClipboardUser, faCircleCheck, faCalendarCheck, faClock, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
   const getStatusStyles = (status) => {
@@ -7,22 +7,27 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
       Confirmed: {
         card: 'bg-white/60 dark:bg-slate-800/60 ring-slate-900/5 dark:ring-slate-700/20 hover:shadow-lg',
         text: 'text-green-700 dark:text-green-300',
+        icon: faCircleCheck,
       },
       Planning: {
         card: 'bg-blue-100/60 dark:bg-blue-900/30 ring-blue-300/40 dark:ring-blue-700/40 hover:shadow-lg',
         text: 'text-blue-700 dark:text-blue-300',
+        icon: faCalendarCheck,
       },
       Staff: {
         card: 'bg-white/60 dark:bg-slate-800/60 ring-slate-900/5 dark:ring-slate-700/20 hover:shadow-lg',
         text: 'text-green-700 dark:text-green-300',
+        icon: faClipboardUser,
       },
       Tentative: {
         card: 'bg-yellow-100/60 dark:bg-yellow-900/30 ring-yellow-300/40 dark:ring-yellow-700/40 hover:shadow-lg',
         text: 'text-yellow-700 dark:text-yellow-300',
+        icon: faClock,
       },
       Cancelled: {
         card: 'bg-red-100/60 dark:bg-red-900/30 ring-red-300/40 dark:ring-red-700/40 hover:shadow-lg',
         text: 'text-red-700 dark:text-red-300',
+        icon: faXmark,
       },
     };
     return styles[status] || styles.Confirmed;
@@ -57,11 +62,17 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
           <p className={`${statusStyles.text} text-xs font-semibold uppercase tracking-wide text-right leading-tight`}>
             {status === "Staff" ? (
               <span className="inline-flex items-center justify-end gap-1">
-                Confirmed
-                <FontAwesomeIcon icon={faClipboardUser} aria-hidden="true" className="text-[16px]" />
+                <FontAwesomeIcon icon={faCircleCheck} aria-hidden="true" className="text-[14px]" />
+                <FontAwesomeIcon icon={faClipboardUser} aria-hidden="true" className="text-[14px]" />
+                <span>Confirmed</span>
               </span>
             ) : (
-              status
+              <span className="inline-flex items-center justify-end gap-1">
+                {statusStyles.icon && (
+                  <FontAwesomeIcon icon={statusStyles.icon} aria-hidden="true" className="text-[14px]" />
+                )}
+                {status}
+              </span>
             )}
           </p>
         </div>

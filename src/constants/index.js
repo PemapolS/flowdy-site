@@ -86,7 +86,8 @@ export const events = [
         label: "BangkokBeasts 2024",
         location: "Bangkok, Thailand",
         date: "10 November",
-        year: "2024"
+        year: "2024",
+        status: "Staff"
     },    
     {
         imgURL: flagMY,
@@ -100,7 +101,8 @@ export const events = [
         label: "Thaitails 2025",
         location: "Nonthaburi, Thailand",
         date: "22-23 March",
-        year: "2025"
+        year: "2025",
+        status: "Staff"
     },
         {
         imgURL: flagMY,
@@ -142,7 +144,8 @@ export const events = [
         label: "BangkokBeasts 2025",
         location: "Bangkok, Thailand",
         date: "15 November",
-        year: "2025"
+        year: "2025",
+        status: "Staff"
     },    
     // {
     //     imgURL: flagMY,

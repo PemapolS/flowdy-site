@@ -2,7 +2,7 @@ import React, { useState, useMemo, useEffect } from 'react';
 import { events } from '../constants';
 import EventCard from '../components/EventCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faClipboardUser } from '@fortawesome/free-solid-svg-icons';
 
 const monthMap = {
   january: 0, jan: 0,
@@ -93,9 +93,12 @@ const Events = () => {
   }, []);
   const currentYear = new Date().getFullYear();
 
+  // filter out cancelled events once
+  const filteredEvents = useMemo(() => events.filter((ev) => ev.status !== 'Cancelled'), []);
+
   // parsed events with start/end dates
   const parsedEvents = useMemo(() => {
-    return events.map((ev) => {
+    return filteredEvents.map((ev) => {
       const range = parseEventRange(ev, currentYear);
       // fallback: if no parse, assign year-based span or treat as current-year single-day
       const fallbackRange = (() => {
@@ -111,7 +114,7 @@ const Events = () => {
         _range: range ?? fallbackRange
       };
     });
-  }, [events, currentYear]);
+  }, [filteredEvents, currentYear]);
 
   // upcoming/current (end date >= today)
   const upcomingEvents = useMemo(() => {
@@ -232,12 +235,17 @@ const Events = () => {
                               )}
 
                               <div className="min-w-0">
-                                <div className="font-ibm font-medium text-gray-900 dark:text-white truncate">{ev.label}</div>
+                                <div className="font-ibm font-medium text-gray-900 dark:text-white truncate flex items-center gap-1">
+                                  <span className="truncate">{ev.label}</span>
+                                  {ev.status === 'Staff' && (
+                                    <FontAwesomeIcon icon={faClipboardUser} className="pl-1 text-[14px] flex-shrink-0" aria-hidden="true" />
+                                  )}
+                                </div>
                                 <div className="font-ibm text-sm text-gray-600 dark:text-gray-300 truncate">{ev.location}</div>
 
                                 {/* show date below location on small screens */}
                                 <div className="font-ibm text-sm text-gray-600 dark:text-gray-300 mt-1 md:hidden">
-                                  <span className="inline-block px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
+                                  <span className="inline-flex items-center gap-1 px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
                                     {ev.date}
                                   </span>
                                 </div>
@@ -246,7 +254,7 @@ const Events = () => {
 
                             {/* keep date badge on medium+ screens */}
                             <div className="ml-3 flex items-center">
-                              <span className="hidden md:inline-block px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
+                              <span className="hidden md:inline-flex items-center gap-1 px-2 py-1 text-xs font-ibm font-medium rounded-full bg-gray-100 dark:bg-slate-700 text-gray-700 dark:text-white">
                                 {ev.date}
                               </span>
                             </div>
