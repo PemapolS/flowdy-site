@@ -51,7 +51,8 @@ export const events = [
         label: "BangkokBeasts 2023",
         location: "Bangkok, Thailand",
         date: "11 November",
-        year: "2023"
+        year: "2023",
+        status: "Staff"
     },    
     {
         imgURL: flagMY,
