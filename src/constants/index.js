@@ -107,7 +107,7 @@ export const events = [
     },
         {
         imgURL: flagMY,
-        label: "FURlieu",
+        label: "FURLieu",
         location: "Johor Bahru, Malaysia",
         date: "11 May",
         year: "2025"
@@ -171,7 +171,7 @@ export const events = [
     },
     {
         imgURL: flagMY,
-        label: "FURlieu",
+        label: "FURLieu",
         location: "Johor Bahru, Malaysia",
         date: "May",
         year: "2026",
