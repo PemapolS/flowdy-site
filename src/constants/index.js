@@ -1,4 +1,4 @@
-import { flagTH, flagMY, flagTW, flagAU, flagUK } from "../../public/flags";
+import { flagTH, flagMY, flagTW, flagAU, flagUK, flagID } from "../../public/flags";
 import { faTwitter, faFacebook, faTelegram, faBluesky, faTumblr, faSteam, faSpotify } from '@fortawesome/free-brands-svg-icons'
 import { faHouse, faPaw, faCommentDots } from '@fortawesome/free-solid-svg-icons'
 
@@ -162,28 +162,48 @@ export const events = [
         label: "Thaitails 2026",
         location: "Bangkok, Thailand",
         date: "21-22 March",
-        year: "2026"
+        year: "2026",
+        status: "Confirmed"
+    },
+    {
+        imgURL: flagTH,
+        label: "SiamPaws 2026",
+        location: "Bangkok, Thailand",
+        date: "6-7 June",
+        year: "2026",
+        status: "Tentative"
+    },
+    {
+        imgURL: flagID,
+        label: "IWAG 2026",
+        location: "Tangerang, Indonesia",
+        date: "4-5 July",
+        year: "2026",
+        status: "Tentative"
     },
     {
         imgURL: flagTH,
         label: "TACRA 2026",
         location: "Bangkok, Thailand",
         date: "1 August",
-        year: "2026"
+        year: "2026",
+        status: "Planning"
     },
     {
         imgURL: flagTH,
         label: "BangkokBeasts 2026",
         location: "Bangkok, Thailand",
         date: "November",
-        year: "2026"
+        year: "2026",
+        status: "Planning"
     },
     {
         imgURL: flagMY,
         label: "FURUM 2026",
         location: "Petaling Jaya, Malaysia",
         date: "December",
-        year: "2026"
+        year: "2026",
+        status: "Tentative"
     }
 ]
 
