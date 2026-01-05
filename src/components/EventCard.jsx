@@ -35,6 +35,23 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
 
   const statusStyles = getStatusStyles(status);
 
+  const renderStatusContent = () => (
+    status === "Staff" ? (
+      <span className="inline-flex items-center gap-1">
+        <FontAwesomeIcon icon={faCircleCheck} aria-hidden="true" className="text-[14px]" />
+        <FontAwesomeIcon icon={faClipboardUser} aria-hidden="true" className="text-[14px]" />
+        <span>Confirmed</span>
+      </span>
+    ) : (
+      <span className="inline-flex items-center gap-1">
+        {statusStyles.icon && (
+          <FontAwesomeIcon icon={statusStyles.icon} aria-hidden="true" className="text-[14px]" />
+        )}
+        {status}
+      </span>
+    )
+  );
+
   return (
     <article
       role="article"
@@ -55,25 +72,17 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
               <h3 className="text-gray-900 dark:text-white font-bold text-base lg:text-lg truncate">{label}</h3>
               <p className="text-gray-700 dark:text-gray-300 text-sm truncate">{location}</p>
               <p className="text-gray-600 dark:text-gray-400 text-sm mt-1">{date}</p>
+              <div className="mt-1 sm:hidden">
+                <p className={`${statusStyles.text} text-xs font-semibold uppercase tracking-wide leading-tight`}>
+                  {renderStatusContent()}
+                </p>
+              </div>
           </div>
         </div>
 
-        <div className="flex-shrink-0 ml-2">
+        <div className="flex-shrink-0 ml-2 hidden sm:block">
           <p className={`${statusStyles.text} text-xs font-semibold uppercase tracking-wide text-right leading-tight`}>
-            {status === "Staff" ? (
-              <span className="inline-flex items-center justify-end gap-1">
-                <FontAwesomeIcon icon={faCircleCheck} aria-hidden="true" className="text-[14px]" />
-                <FontAwesomeIcon icon={faClipboardUser} aria-hidden="true" className="text-[14px]" />
-                <span>Confirmed</span>
-              </span>
-            ) : (
-              <span className="inline-flex items-center justify-end gap-1">
-                {statusStyles.icon && (
-                  <FontAwesomeIcon icon={statusStyles.icon} aria-hidden="true" className="text-[14px]" />
-                )}
-                {status}
-              </span>
-            )}
+            {renderStatusContent()}
           </p>
         </div>
     </article>
