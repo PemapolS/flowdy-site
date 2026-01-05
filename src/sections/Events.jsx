@@ -93,12 +93,9 @@ const Events = () => {
   }, []);
   const currentYear = new Date().getFullYear();
 
-  // filter out cancelled events once
-  const filteredEvents = useMemo(() => events.filter((ev) => ev.status !== 'Cancelled'), []);
-
   // parsed events with start/end dates
   const parsedEvents = useMemo(() => {
-    return filteredEvents.map((ev) => {
+    return events.map((ev) => {
       const range = parseEventRange(ev, currentYear);
       // fallback: if no parse, assign year-based span or treat as current-year single-day
       const fallbackRange = (() => {
@@ -114,7 +111,7 @@ const Events = () => {
         _range: range ?? fallbackRange
       };
     });
-  }, [filteredEvents, currentYear]);
+  }, [events, currentYear]);
 
   // upcoming/current (end date >= today)
   const upcomingEvents = useMemo(() => {
