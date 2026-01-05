@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClipboardUser } from '@fortawesome/free-solid-svg-icons';
+
 const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
   const getStatusStyles = (status) => {
     const styles = {
@@ -8,6 +11,10 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
       Planning: {
         card: 'bg-blue-100/60 dark:bg-blue-900/30 ring-blue-300/40 dark:ring-blue-700/40 hover:shadow-lg',
         text: 'text-blue-700 dark:text-blue-300',
+      },
+      Staff: {
+        card: 'bg-white/60 dark:bg-slate-800/60 ring-slate-900/5 dark:ring-slate-700/20 hover:shadow-lg',
+        text: 'text-green-700 dark:text-green-300',
       },
       Tentative: {
         card: 'bg-yellow-100/60 dark:bg-yellow-900/30 ring-yellow-300/40 dark:ring-yellow-700/40 hover:shadow-lg',
@@ -26,7 +33,7 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
   return (
     <article
       role="article"
-      className={`font-ibm group flex-none min-w-[220px] max-w-[360px] w-full rounded-[18px] ring-1 transition-transform duration-200 ease-out hover:-translate-y-1 px-4 py-3 flex items-center gap-3 justify-between ${statusStyles.card}`}
+      className={`font-ibm group flex-none min-w-[240px] max-w-[400px] w-full rounded-[18px] ring-1 transition-transform duration-200 ease-out hover:-translate-y-1 px-4 py-3 flex items-center gap-3 justify-between ${statusStyles.card}`}
     >
         <div className="flex items-center gap-3 min-w-0 flex-1">
           <div className="w-12 h-10 flex-shrink-0 rounded-md overflow-hidden bg-slate-100 dark:bg-slate-700 flex items-center justify-center ring-1 ring-slate-900/5 dark:ring-0">
@@ -47,8 +54,15 @@ const EventCard = ({imgURL, label, date, location, status = "Confirmed"}) => {
         </div>
 
         <div className="flex-shrink-0 ml-2">
-          <p className={`${statusStyles.text} text-xs font-semibold uppercase tracking-wide text-right`}>
-            {status}
+          <p className={`${statusStyles.text} text-xs font-semibold uppercase tracking-wide text-right leading-tight`}>
+            {status === "Staff" ? (
+              <span className="inline-flex items-center justify-end gap-1">
+                Confirmed
+                <FontAwesomeIcon icon={faClipboardUser} aria-hidden="true" className="text-[16px]" />
+              </span>
+            ) : (
+              status
+            )}
           </p>
         </div>
     </article>

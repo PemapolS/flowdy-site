@@ -163,7 +163,7 @@ export const events = [
         location: "Bangkok, Thailand",
         date: "21-22 March",
         year: "2026",
-        status: "Confirmed"
+        status: "Staff"
     },
     {
         imgURL: flagTH,
@@ -195,7 +195,7 @@ export const events = [
         location: "Bangkok, Thailand",
         date: "November",
         year: "2026",
-        status: "Planning"
+        status: "Staff"
     },
     {
         imgURL: flagMY,
