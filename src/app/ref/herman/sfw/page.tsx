@@ -3,7 +3,7 @@ import { RefHermanSFW, OT03_002, HB03_001 } from "../../../../../public/images";
 export default function SfwPage() {
     // container for image + credit background / ring (applies to whole box including image)
     const boxClass = "rounded-lg overflow-hidden bg-white/60 dark:bg-slate-900/40 ring-1 ring-slate-900/5 dark:ring-slate-700/20 shadow-sm";
-    const captionClass = "p-2 text-sm text-gray-500 dark:text-gray-400 font-ibm text-center";
+    const captionClass = "p-2 text-sm text-gray-600 dark:text-gray-300 font-ibm text-center";
 
     return (
         <div className="font-ibm flex flex-col mx-auto max-w-screen-xl gap-4 bg-slate-300 dark:bg-slate-800 rounded-xl p-6">
